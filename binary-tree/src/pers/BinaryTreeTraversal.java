@@ -1,10 +1,8 @@
-package pers.traversal;
+package pers;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Stack;
-
-import pers.TreeNode;
 
 /**
  * 前序、中序、后序、层次遍历 
