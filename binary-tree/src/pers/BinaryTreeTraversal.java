@@ -4,6 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Stack;
 
+
 /**
  * 前序、中序、后序、层次遍历 
  * @author cck
@@ -11,7 +12,7 @@ import java.util.Stack;
 public class BinaryTreeTraversal {
     
     /**
-     * 前序遍历
+     * 前序遍历-迭代
      */
     public static void pre(TreeNode head) {
         
@@ -34,6 +35,20 @@ public class BinaryTreeTraversal {
                 stack.push(temp.left);
             }
         }
+    }
+    
+    /**
+     * 前序遍历-递归 
+     */
+    public static void preRecursion(TreeNode head) {
+        
+        if (head == null) {
+            return ;
+        }
+        
+        System.out.print(head.val + " ");
+        preRecursion(head.left);
+        preRecursion(head.right);
     }
     
     /**
@@ -61,6 +76,20 @@ public class BinaryTreeTraversal {
                 head = head.right;
             }
         }
+    }
+    
+    /**
+     * 中序遍历-递归 
+     */
+    public static void midRecursion(TreeNode head) {
+        
+        if (head == null) {
+            return ;
+        }
+        
+        midRecursion(head.left);
+        System.out.print(head.val + " ");
+        midRecursion(head.right);
     }
     
     /**
@@ -92,6 +121,20 @@ public class BinaryTreeTraversal {
         while (!stack2.isEmpty()) {
             System.out.print(stack2.pop().val + " ");
         }
+    }
+    
+    /**
+     * 后序遍历-递归 
+     */
+    public static void postRecursion(TreeNode head) {
+        
+        if (head == null) {
+            return ;
+        }
+        
+        postRecursion(head.left);
+        postRecursion(head.right);
+        System.out.print(head.val + " ");
     }
     
     /*
@@ -129,23 +172,55 @@ public class BinaryTreeTraversal {
     
     public static void main(String[] args) {
         
-        TreeNode left = new TreeNode(1);
-        TreeNode root = new TreeNode(2);
-        TreeNode right = new TreeNode(3);
+        TreeNode root = initBT();
         
-        root.left = left;
-        root.right = right;
-        
+        System.out.println("前序遍历");
         pre(root);
         System.out.println();
+        preRecursion(root);
+        System.out.println();
         
+        System.out.println("中序遍历");
         mid(root);
         System.out.println();
-        
-        post(root);
+        midRecursion(root);
         System.out.println();
         
+        System.out.println("后序遍历");
+        post(root);
+        System.out.println();
+        postRecursion(root);
+        System.out.println();
+        
+        System.out.println("层序遍历");
         level(root);
+    }
+
+    private static TreeNode initBT() {
+        
+        /**
+         *     1
+         *   2   3
+         * 4       5
+         *        6
+         *      7   8 
+         */
+        
+        TreeNode t1 = new TreeNode(1);
+        TreeNode t2 = new TreeNode(2);
+        TreeNode t3 = new TreeNode(3);
+        TreeNode t4 = new TreeNode(4);
+        TreeNode t5 = new TreeNode(5);
+        TreeNode t6 = new TreeNode(6);
+        TreeNode t7 = new TreeNode(7);
+        TreeNode t8 = new TreeNode(8);
+        
+        t1.left = t2; t1.right = t3;
+        t2.left = t4;
+        t3.right = t5;
+        t5.left = t6;
+        t6.left = t7; t6.right = t8;
+        return t1;
     }
     
 }
