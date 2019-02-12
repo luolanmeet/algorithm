@@ -24,18 +24,19 @@ public class BuildTree1 {
         
         TreeNode root = new TreeNode(preorder[pl]);
         
-        int temp = 0;
+        int mid = 0;
         for (int i = il; i <= ir; i++) {
 
-            // 计算左子树有多个节点
+			// mid就是中序遍历根节点的位置，mid左边是左子树的中序序列，右边是右子树的中序序列
+            // mid可以用来计算左子树有多个节点，mid-il 就是左子树的节点数量
             if (inorder[i] == preorder[pl]) {
-                temp = i;
+                mid = i;
                 break;
             }
         }
         
-        root.left = build(preorder, inorder, pl+1, pl+temp-il, il, temp-1);
-        root.right = build(preorder, inorder, pl+temp-il+1, pr, temp+1, ir);
+        root.left = build(preorder, inorder, pl+1, pl+mid-il, il, mid-1);
+        root.right = build(preorder, inorder, pl+mid-il+1, pr, mid+1, ir);
         
         return root;
     }
