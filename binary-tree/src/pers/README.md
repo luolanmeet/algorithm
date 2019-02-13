@@ -22,6 +22,7 @@ Tree2str            | `LC简单题`[606.根据二叉树创建字符串](https://
 AddOneRow           | `LC中等题`[623.在二叉树中增加一行](https://leetcode-cn.com/problems/add-one-row-to-tree/)
 MaximumBinaryTree   | `LC中等题`[654.最大二叉树](https://leetcode-cn.com/problems/maximum-binary-tree/)
 WidthOfBinaryTree   | `LC中等题`[662.二叉树最大宽度](https://leetcode-cn.com/problems/maximum-width-of-binary-tree/)
+PruneTree           | `LC中等题`[814.二叉树剪枝](https://leetcode-cn.com/problems/binary-tree-pruning/)
 DistanceK           | `LC中等题`[863.二叉树中所有距离为 K 的结点](https://leetcode-cn.com/problems/all-nodes-distance-k-in-binary-tree/)
 FlipEquiv           | `LC中等题`[951.翻转等价二叉树](https://leetcode-cn.com/problems/flip-equivalent-binary-trees/)
 CompleteTree        | `LC中等题`[958.二叉树的完全性检验](https://leetcode-cn.com/problems/check-completeness-of-a-binary-tree/)
