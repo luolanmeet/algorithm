@@ -4,6 +4,7 @@
 类名|内容
 ---|---
 BinaryTreeTraversal |  前序、中序、后序、层次遍历
+BinaryTreeDepth     |  求二叉树深度
 BinaryTreeCopy      |  克隆二叉树
 IsSymmetric         | `LC简单题`[101.对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/)
 BuildTree1          | `LC中等题`[105.从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
