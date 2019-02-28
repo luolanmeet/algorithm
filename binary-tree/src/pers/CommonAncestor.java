@@ -10,9 +10,27 @@ import java.util.Map;
  */
 public class CommonAncestor {
     
+    // 解法1
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        
+        if (root == null || root == p || root == q) {
+            return root;
+        }
+        
+        TreeNode left = lowestCommonAncestor(root.left, p, q);
+        TreeNode right = lowestCommonAncestor(root.right, p, q);
+        
+        if (left != null && right != null) {
+            return root;
+        }
+        
+        return left == null ? right : left;
+    }
+    
+    // 解法2
     // 找到两个节点的所有祖先
     // 之后在结果中找到公共祖先
-    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+    public TreeNode lowestCommonAncestor2(TreeNode root, TreeNode p, TreeNode q) {
         
         Map<Integer, TreeNode> map1 = new HashMap<>();
         Map<Integer, TreeNode> map2 = new HashMap<>();
@@ -87,6 +105,11 @@ public class CommonAncestor {
         TreeNode node = obj.lowestCommonAncestor(t1, t2, t3);
         System.out.println(node.val);
         node = obj.lowestCommonAncestor(t1, t2, t9);
+        System.out.println(node.val);
+        
+        node = obj.lowestCommonAncestor2(t1, t2, t3);
+        System.out.println(node.val);
+        node = obj.lowestCommonAncestor2(t1, t2, t9);
         System.out.println(node.val);
     }
     
