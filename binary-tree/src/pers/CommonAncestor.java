@@ -10,6 +10,8 @@ import java.util.Map;
  */
 public class CommonAncestor {
     
+    // 找到两个节点的所有祖先
+    // 之后在结果中找到公共祖先
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
         
         Map<Integer, TreeNode> map1 = new HashMap<>();
