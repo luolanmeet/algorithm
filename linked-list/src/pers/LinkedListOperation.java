@@ -1,5 +1,9 @@
 package pers;
 
+/**
+ * 链表的一些操作
+ * @author cck
+ */
 public class LinkedListOperation {
     
     /**
