@@ -4,3 +4,4 @@
 类名|内容
 ---|---
 ShortesPathDijkstra | `Dijkstra`迪杰斯特拉最短路径算法
+PrimMST             | `Prim`普里姆最小生成树算法
