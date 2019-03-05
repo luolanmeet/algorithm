@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 /**
- * 填充同一层的兄弟节点
+ * 116. 填充同一层的兄弟节点
  * https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node/
  * @author cck
  */

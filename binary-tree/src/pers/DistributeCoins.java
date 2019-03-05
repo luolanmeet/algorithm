@@ -1,7 +1,7 @@
 package pers;
 
 /**
- * 在二叉树中分配硬币
+ * 979. 在二叉树中分配硬币
  * https://leetcode-cn.com/problems/distribute-coins-in-binary-tree/  
  * @author cck
  */

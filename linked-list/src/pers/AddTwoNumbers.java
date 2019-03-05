@@ -1,7 +1,7 @@
 package pers;
 
 /**
- * 两数相加
+ * 2. 两数相加
  * https://leetcode-cn.com/problems/add-two-numbers/
  * @author cck
  */

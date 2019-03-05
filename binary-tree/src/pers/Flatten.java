@@ -3,7 +3,7 @@ package pers;
 import java.util.Stack;
 
 /**
- * 二叉树展开为链表
+ * 114. 二叉树展开为链表
  * https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/
  * @author cck
  */
