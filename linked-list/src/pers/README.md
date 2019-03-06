@@ -13,4 +13,5 @@ RotateRight         | `LC中等题`[61. 旋转链表](https://leetcode-cn.com/pr
 DeleteDuplicates    | `LC中等题`[82. 删除排序链表中的重复元素 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/)
 Partition           | `LC中等题`[86. 分隔链表](https://leetcode-cn.com/problems/partition-list/)
 ReverseBetween      | `LC中等题`[92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)
+DetectCycle         | `LC中等题`[142. 环形链表 II](https://leetcode-cn.com/problems/linked-list-cycle-ii/)
 ReverseList         | `LC简单题`[206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
