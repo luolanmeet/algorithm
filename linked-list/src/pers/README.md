@@ -10,5 +10,6 @@ RemoveNthFromEnd    | `LC中等题`[19. 删除链表的倒数第N个节点](http
 MergeTwoLists       | `LC简单题`[21. 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/)
 SwapPairs           | `LC中等题`[24. 两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/)
 RotateRight         | `LC中等题`[61. 旋转链表](https://leetcode-cn.com/problems/rotate-list/)
-DeleteDuplicates    | `LC中等题`[82. 删除排序链表中的重复元素 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/ )
+DeleteDuplicates    | `LC中等题`[82. 删除排序链表中的重复元素 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list-ii/)
+Partition           | `LC中等题`[86. 分隔链表](https://leetcode-cn.com/problems/partition-list/)
 ReverseList         | `LC简单题`[206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
