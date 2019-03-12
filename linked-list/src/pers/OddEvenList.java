@@ -9,6 +9,28 @@ public class OddEvenList {
     
     public ListNode oddEvenList(ListNode head) {
         
+        if (head == null) {
+            return head;
+        }
+        
+        ListNode odd = head;
+        ListNode even = head.next;
+        ListNode firstEven = even;
+        
+        while (even != null && even.next != null) {
+            odd.next = odd.next.next;
+            odd = odd.next;
+            even.next = even.next.next;
+            even = even.next;
+        }
+        
+        odd.next = firstEven;
+        
+        return head;
+    }
+    
+    public ListNode oddEvenList2(ListNode head) {
+        
         ListNode resp = head;
         ListNode h1 = new ListNode(0);
         ListNode h2 = new ListNode(0);
