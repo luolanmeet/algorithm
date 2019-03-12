@@ -17,3 +17,4 @@ DetectCycle         | `LC中等题`[142. 环形链表 II](https://leetcode-cn.co
 ReorderList         | `LC中等题`[143. 重排链表](https://leetcode-cn.com/problems/reorder-list/)
 InsertionSortList   | `LC中等题`[147. 对链表进行插入排序](https://leetcode-cn.com/problems/insertion-sort-list/)
 ReverseList         | `LC简单题`[206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
+OddEvenList         | `LC中等题`[328. 奇偶链表](https://leetcode-cn.com/problems/odd-even-linked-list/)
