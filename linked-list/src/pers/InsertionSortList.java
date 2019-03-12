@@ -9,42 +9,58 @@ public class InsertionSortList {
     
     public ListNode insertionSortList(ListNode head) {
         
-        ListNode header = new ListNode(-1);
+        if (head == null) {
+            return head;
+        }
+        
+        ListNode resp = new ListNode(0);
+        
+        ListNode pre;
+        ListNode temp;
+        
         while (head != null) {
             
-            ListNode insertNode = head;
-            head = head.next;
-            if (header.next == null) { // 当前序列是空
+            pre = resp;
+            temp = resp.next;
+            
+            while (temp != null && head.val > temp.val) {
+                pre = temp;
+                temp = temp.next;
+            }
+            
+            // head是当前最大的，放入链表最后
+            if (temp == null) {
                 
-                insertNode.next = null;
-                header.next = insertNode;
+                pre.next = head;
+                head = head.next;
+                pre.next.next = null;
+                
             } else {
                 
-                ListNode p = header;
-                // 查找应该插入的位置
-                while (p.next != null && p.next.val < insertNode.val) {
-                    p = p.next;
-                }
+                // head 插入到pre 和 temp 中间
+                pre.next = head.next;
+                head.next = temp;
+                temp = pre.next;
+                pre.next = head;
+                head = temp;
                 
-                insertNode.next = p.next;
-                p.next = insertNode;
+                /*ListNode temp2 = head.next;
+                pre.next = head;
+                head.next = temp;
+                head = temp2;*/
             }
         }
         
-        ListNode resNode = header.next;
-        header.next = null;
-        return resNode;
+        return resp.next;
     }
     
     public static void main(String[] args) {
         
-        ListNode l1 = new ListNode(4);
-        ListNode l2 = new ListNode(2);
+        ListNode l1 = new ListNode(3);
+        ListNode l2 = new ListNode(4);
         ListNode l3 = new ListNode(1);
-        ListNode l4 = new ListNode(3);
         l1.next = l2;
         l2.next = l3;
-        l3.next = l4;
         
         InsertionSortList obj = new InsertionSortList();
         ListNode head = obj.insertionSortList(l1);
@@ -53,7 +69,6 @@ public class InsertionSortList {
             System.out.print(head.val + "  ");
             head = head.next;
         }
-        
         
     }
     
