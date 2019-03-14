@@ -5,6 +5,7 @@
 🏝 [binary-tree] |  二叉树
 🗺 [graph]       |  图
 🔗 [linked-list] |  链表
+🛢 [stack] |  栈
 
 [binary-tree]: https://github.com/luolanmeet/algorithm/tree/master/binary-tree/src/pers
 [graph]: https://github.com/luolanmeet/algorithm/tree/master/graph/src/pers
