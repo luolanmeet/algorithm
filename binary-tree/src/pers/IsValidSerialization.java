@@ -6,8 +6,8 @@ package pers;
  * @author cck
  */
 public class IsValidSerialization {
-
-    // 树的出度入度
+    
+    // 一个数字可以消除两个 #
     public boolean isValidSerialization(String preorder) {
         
         String[] ss = preorder.split(",");
