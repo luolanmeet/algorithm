@@ -10,7 +10,7 @@ import java.util.Stack;
  */
 public class DailyTemperatures {
     
-    // 和【84. 柱状图中最大的矩形】是一个思路
+    // 和【84. 柱状图中最大的矩形】是一个思路， 递增栈
     public int[] dailyTemperatures(int[] T) {
         
         Stack<Integer> stack = new Stack<>();
@@ -21,8 +21,7 @@ public class DailyTemperatures {
         while (i < T.length) {
             
             if (stack.isEmpty() || T[stack.peek()] >= T[i]) {
-                stack.push(i);
-                i++;
+                stack.push(i++);
             } else {
                 Integer index = stack.pop();
                 res[index] = i - index;
