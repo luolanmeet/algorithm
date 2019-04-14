@@ -18,4 +18,5 @@
 
 类名|内容
 ---|---
-BloomFilter |  布隆过滤器
+BloomFilter         |  布隆过滤器
+FrequencySort       | `LC中等题`[451. 根据字符出现频率排序](https://leetcode-cn.com/problems/sort-characters-by-frequency/comments/)

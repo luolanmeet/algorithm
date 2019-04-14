@@ -7,6 +7,13 @@ package pers;
  */
 public class AddTwoNumbers {
     
+    /**
+     * 因为是逆序的，所以两个链表的第一位肯定是个位，可以直接相加，然后除10，余数作为新的节点保存进结果
+     * 之后的节点以此类推
+     * @param l1
+     * @param l2
+     * @return
+     */
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         
         ListNode res = new ListNode(0);

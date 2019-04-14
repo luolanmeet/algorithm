@@ -9,6 +9,15 @@ import java.util.Stack;
  */
 public class AddTwoNumbers2 {
     
+    /**
+     * 相比两数相加 Ⅰ 
+     * 这道题的加数的数字在链表中是顺序排列的
+     * 可考虑 反转链表，直接变成 两数相加 Ⅰ 一样的情况，得到结果后再次反转链表
+     * 这里采用栈的方式，其实也是类似与反转链表
+     * @param l1
+     * @param l2
+     * @return
+     */
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         
         Stack<ListNode> s1 = new Stack<>();
