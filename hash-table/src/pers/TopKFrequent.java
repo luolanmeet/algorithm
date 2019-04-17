@@ -12,6 +12,7 @@ import java.util.Map;
  */
 public class TopKFrequent {
     
+    @SuppressWarnings({ "rawtypes", "unchecked" })
     public List<Integer> topKFrequent(int[] nums, int k) {
 
         Map<Integer, Integer> map = new HashMap<>(nums.length);
@@ -20,37 +21,25 @@ public class TopKFrequent {
             map.merge(num, 1, (o, n) -> o + n);
         }
         
-        Map<Integer, List<Integer>> map2 = new HashMap<>(map.size());
+        // 桶，一开始用了一个 Map<Integer,List<Integer>> 的结构，后边改掉了
+        List[] ls = new List[nums.length + 1]; 
         
-        Integer max = 0;
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
             
-            if (entry.getValue() > max) {
-                max = entry.getValue();
+            if (ls[entry.getValue()] == null) {
+                ls[entry.getValue()] = new ArrayList<>();
             }
             
-            List<Integer> temp = map2.get(entry.getValue());
-            if (temp == null) {
-                temp = new ArrayList<>();
-                map2.put(entry.getValue(), temp);
-            }
-            temp.add(entry.getKey());
+            ls[entry.getValue()].add(entry.getKey());
         }
-        
+
         List<Integer> res = new ArrayList<>(k);
 
-        for (int i = 0; i < k; ) {
+        for (int i = ls.length - 1; i > 0 && res.size() < k; i--) {
             
-            List<Integer> temp = map2.get(max);
-            
-            if (temp == null) {
-                max--;
-                continue;
+            if (ls[i] != null) {
+                res.addAll(ls[i]);
             }
-            
-            res.addAll(temp);
-            i += temp.size();
-            max--;
         }
         
         return res;
