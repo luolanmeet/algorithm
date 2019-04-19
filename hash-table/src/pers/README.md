@@ -22,3 +22,4 @@ BloomFilter         |  布隆过滤器
 GroupAnagrams       | `LC中等题`[49. 字母异位词分组](https://leetcode-cn.com/problems/group-anagrams/)
 TopKFrequent        | `LC中等题`[347. 前K个高频元素](https://leetcode-cn.com/problems/top-k-frequent-elements/)
 FrequencySort       | `LC中等题`[451. 根据字符出现频率排序](https://leetcode-cn.com/problems/sort-characters-by-frequency/comments/)
+FindDuplicate       | `LC中等题`[609. 在系统中查找重复文件(https://leetcode-cn.com/problems/find-duplicate-file-in-system/submissions/)
