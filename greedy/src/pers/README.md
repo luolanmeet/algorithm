@@ -9,4 +9,5 @@
 ---|---
 MaxProfit        | `LC简单题`[122. 买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)
 MinDeletionSize  | `LC简单题`[944. 删列造序](https://leetcode-cn.com/problems/delete-columns-to-make-sorted/)
-TwoCitySchedCost | `LC简单题`[1029. 两地调度](https://leetcode-cn.com/contest/weekly-contest-133/problems/two-city-scheduling/)
+LargestSumAfterKNegations | `LC简单题`[1005. K 次取反后最大化的数组和](https://leetcode-cn.com/problems/maximize-sum-of-array-after-k-negations/)
+TwoCitySchedCost | `LC简单题`[1029. 两地调度](https://leetcode-cn.com/problems/two-city-scheduling/)
