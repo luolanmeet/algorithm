@@ -8,6 +8,7 @@
 类名|内容
 ---|---
 MaxProfit        | `LC简单题`[122. 买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)
+ReconstructQueue | `LC中等题`[406. 根据身高重建队列](https://leetcode-cn.com/problems/queue-reconstruction-by-height/submissions/)
 PartitionLabels  | `LC中等题`[763. 划分字母区间](https://leetcode-cn.com/problems/partition-labels/)
 MinDeletionSize  | `LC简单题`[944. 删列造序](https://leetcode-cn.com/problems/delete-columns-to-make-sorted/)
 LargestSumAfterKNegations | `LC简单题`[1005. K 次取反后最大化的数组和](https://leetcode-cn.com/problems/maximize-sum-of-array-after-k-negations/)
