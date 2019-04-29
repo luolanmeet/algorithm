@@ -3,7 +3,7 @@ package pers;
 /**
  * 991. 坏了的计算器
  * https://leetcode-cn.com/problems/broken-calculator/solution/
- * @author Ryan
+ * @author cck
  */
 public class BrokenCalc {
     

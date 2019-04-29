@@ -8,6 +8,7 @@
 类名|内容
 ---|---
 MaxProfit        | `LC简单题`[122. 买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)
+CanCompleteCircuit        | `LC中等题`[134. 加油站](https://leetcode-cn.com/problems/gas-station/)
 ReconstructQueue | `LC中等题`[406. 根据身高重建队列](https://leetcode-cn.com/problems/queue-reconstruction-by-height/submissions/)
 MaxProfit2       | `LC中等题`[714. 买卖股票的最佳时机含手续费](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)
 PartitionLabels  | `LC中等题`[763. 划分字母区间](https://leetcode-cn.com/problems/partition-labels/)

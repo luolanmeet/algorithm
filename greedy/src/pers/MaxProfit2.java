@@ -3,7 +3,7 @@ package pers;
 /**
  * 714. 买卖股票的最佳时机含手续费
  * https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/
- * @author Ryan
+ * @author cck
  */
 public class MaxProfit2 {
     
