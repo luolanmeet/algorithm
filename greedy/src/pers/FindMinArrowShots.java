@@ -3,7 +3,7 @@ package pers;
 import java.util.Arrays;
 
 /**
- * 452. 用最少数量的箭引爆气球
+ * 452. 用最少数量的箭引爆气球（和435很像）
  * https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons/
  * @author cck
  */
