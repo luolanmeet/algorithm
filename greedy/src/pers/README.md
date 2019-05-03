@@ -13,6 +13,7 @@ ReconstructQueue | `LC中等题`[406. 根据身高重建队列](https://leetcode
 EraseOverlapIntervals     | `LC中等题`[435. 无重叠区间](https://leetcode-cn.com/problems/non-overlapping-intervals/)
 FindMinArrowShots| `LC中等题`[452. 用最少数量的箭引爆气球](https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons/)
 LeastInterval    | `LC中等题`[621. 任务调度器](https://leetcode-cn.com/problems/task-scheduler/)
+IsPossible       | `LC中等题`[659. 分割数组为连续子序列](https://leetcode-cn.com/problems/split-array-into-consecutive-subsequences/)
 MaxProfit2       | `LC中等题`[714. 买卖股票的最佳时机含手续费](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)
 PartitionLabels  | `LC中等题`[763. 划分字母区间](https://leetcode-cn.com/problems/partition-labels/)
 MinDeletionSize  | `LC简单题`[944. 删列造序](https://leetcode-cn.com/problems/delete-columns-to-make-sorted/)
