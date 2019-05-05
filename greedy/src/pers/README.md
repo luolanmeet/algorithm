@@ -7,6 +7,7 @@
 
 类名|内容
 ---|---
+CanJump          | `LC中等题`[55. 跳跃游戏](https://leetcode-cn.com/problems/jump-game/comments/)
 MaxProfit        | `LC简单题`[122. 买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)
 CanCompleteCircuit        | `LC中等题`[134. 加油站](https://leetcode-cn.com/problems/gas-station/)
 ReconstructQueue | `LC中等题`[406. 根据身高重建队列](https://leetcode-cn.com/problems/queue-reconstruction-by-height/submissions/)
