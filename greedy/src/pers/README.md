@@ -16,6 +16,7 @@ LeastInterval    | `LC中等题`[621. 任务调度器](https://leetcode-cn.com/p
 IsPossible       | `LC中等题`[659. 分割数组为连续子序列](https://leetcode-cn.com/problems/split-array-into-consecutive-subsequences/)
 MaxProfit2       | `LC中等题`[714. 买卖股票的最佳时机含手续费](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)
 MonotoneIncreasingDigits  | `LC中等题`[738. 单调递增的数字](https://leetcode-cn.com/problems/monotone-increasing-digits/comments/)
+NumRescueBoats  | `LC中等题`[881. 救生艇](https://leetcode-cn.com/problems/boats-to-save-people/)
 PartitionLabels  | `LC中等题`[763. 划分字母区间](https://leetcode-cn.com/problems/partition-labels/)
 MinDeletionSize  | `LC简单题`[944. 删列造序](https://leetcode-cn.com/problems/delete-columns-to-make-sorted/)
 BrokenCalc       | `LC中等题`[991. 坏了的计算器](https://leetcode-cn.com/problems/broken-calculator/solution/)
