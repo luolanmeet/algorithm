@@ -23,6 +23,7 @@ AdvantageCount  | `LC中等题`[870. 优势洗牌](https://leetcode-cn.com/probl
 NumRescueBoats  | `LC中等题`[881. 救生艇](https://leetcode-cn.com/problems/boats-to-save-people/)
 PartitionLabels  | `LC中等题`[763. 划分字母区间](https://leetcode-cn.com/problems/partition-labels/)
 MinDeletionSize  | `LC简单题`[944. 删列造序](https://leetcode-cn.com/problems/delete-columns-to-make-sorted/)
+BagOfTokensScore  | `LC简单题`[948. 令牌放置](https://leetcode-cn.com/problems/bag-of-tokens/comments/)
 StrWithout3a3b   | `LC中等题`[984. 不含 AAA 或 BBB 的字符串](https://leetcode-cn.com/problems/string-without-aaa-or-bbb/)
 BrokenCalc       | `LC中等题`[991. 坏了的计算器](https://leetcode-cn.com/problems/broken-calculator/solution/)
 LargestSumAfterKNegations | `LC简单题`[1005. K 次取反后最大化的数组和](https://leetcode-cn.com/problems/maximize-sum-of-array-after-k-negations/)
