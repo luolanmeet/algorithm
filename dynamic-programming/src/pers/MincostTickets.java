@@ -42,6 +42,32 @@ public class MincostTickets {
         return res;
     }
     
+    public int mincostTickets2(int[] days, int[] costs) {
+        
+        int finalDay = days[days.length-1];
+        int[] dp = new int[finalDay+1];  // 这个dp 存的是 到第i天需要的最小的话费
+        int j = 0;
+        
+        for(int i = 1; i <= finalDay; i++){
+            
+            if(i == days[j]){
+                
+                int a = dp[i - 1] + costs[0];
+                int b = (i > 7 ? dp[i - 7] : 0) + costs[1];  // 7天前的花费，加上七天后，也就是今天的花费（这张票正好用完）
+                int c = (i > 30 ? dp[i - 30] : 0) + costs[2];
+                
+                dp[i] = Math.min(Math.min(a, b), c);
+                j++;
+                
+            } else {
+                dp[i] = dp[i-1];
+            }
+            
+        }
+        
+        return dp[finalDay];
+    }
+    
     public static void main(String[] args) {
         
         MincostTickets obj = new MincostTickets();
