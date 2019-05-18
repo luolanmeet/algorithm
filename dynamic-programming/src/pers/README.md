@@ -9,4 +9,5 @@ ShoppingOffers | `LC中等题`[638. 大礼包](https://leetcode-cn.com/problems/
 CountSubstrings | `LC中等题`[647. 回文子串](https://leetcode-cn.com/problems/palindromic-substrings/submissions/)
 StoneGame | `LC中等题`[877. 石子游戏](https://leetcode-cn.com/problems/stone-game/)
 MinFallingPathSum | `LC中等题`[931. 下降路径最小和](https://leetcode-cn.com/problems/minimum-falling-path-sum/comments/)
+MincostTickets | `LC中等题`[983. 最低票价](https://leetcode-cn.com/problems/minimum-cost-for-tickets/submissions/)
 DivisorGame | `LC简单题`[1025. 除数博弈](https://leetcode-cn.com/problems/divisor-game/comments/)
