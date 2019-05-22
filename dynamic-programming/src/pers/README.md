@@ -6,6 +6,7 @@
 MaxSubArray | `LC简单题`[53. 最大子序和](https://leetcode-cn.com/problems/maximum-subarray/submissions/)
 ClimbStairs | `LC简单题`[70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)
 MaxProfit | `LC中等题`[309. 最佳买卖股票时机含冷冻期](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/submissions/)
+CountNumbersWithUniqueDigits | `LC中等题`[357. 计算各个位数不同的数字个数](https://leetcode-cn.com/problems/count-numbers-with-unique-digits/)
 ShoppingOffers | `LC中等题`[638. 大礼包](https://leetcode-cn.com/problems/shopping-offers/comments/)
 FindLongestChain | `LC中等题`[646. 最长数对链](https://leetcode-cn.com/problems/maximum-length-of-pair-chain/)
 CountSubstrings | `LC中等题`[647. 回文子串](https://leetcode-cn.com/problems/palindromic-substrings/submissions/)
