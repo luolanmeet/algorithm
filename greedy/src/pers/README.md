@@ -30,3 +30,4 @@ StrWithout3a3b   | `LC中等题`[984. 不含 AAA 或 BBB 的字符串](https://l
 BrokenCalc       | `LC中等题`[991. 坏了的计算器](https://leetcode-cn.com/problems/broken-calculator/solution/)
 LargestSumAfterKNegations | `LC简单题`[1005. K 次取反后最大化的数组和](https://leetcode-cn.com/problems/maximize-sum-of-array-after-k-negations/)
 TwoCitySchedCost | `LC简单题`[1029. 两地调度](https://leetcode-cn.com/problems/two-city-scheduling/)
+MaxSatisfied | `LC中等题`[1052. 爱生气的书店老板](https://leetcode-cn.com/problems/grumpy-bookstore-owner/)
