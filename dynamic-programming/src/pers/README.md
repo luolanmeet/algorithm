@@ -10,6 +10,7 @@ CountNumbersWithUniqueDigits | `LC中等题`[357. 计算各个位数不同的数
 ShoppingOffers | `LC中等题`[638. 大礼包](https://leetcode-cn.com/problems/shopping-offers/comments/)
 FindLongestChain | `LC中等题`[646. 最长数对链](https://leetcode-cn.com/problems/maximum-length-of-pair-chain/)
 CountSubstrings | `LC中等题`[647. 回文子串](https://leetcode-cn.com/problems/palindromic-substrings/submissions/)
+MinSteps | `LC中等题`[650. 只有两个键的键盘](https://leetcode-cn.com/problems/2-keys-keyboard/submissions/)
 DeleteAndEarn | `LC中等题`[740. 删除与获得点数](https://leetcode-cn.com/problems/delete-and-earn/)
 StoneGame | `LC中等题`[877. 石子游戏](https://leetcode-cn.com/problems/stone-game/)
 MinFallingPathSum | `LC中等题`[931. 下降路径最小和](https://leetcode-cn.com/problems/minimum-falling-path-sum/comments/)
