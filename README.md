@@ -2,14 +2,16 @@
 
 项目名|内容
 ---|---
+🍥 [backtracking] |  回溯算法
 🏝 [binary-tree] |  二叉树
-🐌 [dynamic-programming]     |  动态规划
-🗺 [graph]     |  图
-🐍 [greedy]     |  贪心算法
-🎰 [hash-table] |  哈希表
-🔗 [linked-list] |  链表
+🐌 [dynamic-programming]  |  动态规划
+🗺 [graph]  |  图
+🐍 [greedy]  |  贪心算法
+🎰 [hash-table]  |  哈希表
+🔗 [linked-list]  |  链表
 🛢 [stack] |  栈
 
+[backtracking]: https://github.com/luolanmeet/algorithm/tree/master/backtracking/src/pers
 [binary-tree]: https://github.com/luolanmeet/algorithm/tree/master/binary-tree/src/pers
 [dynamic-programming]: https://github.com/luolanmeet/algorithm/tree/master/dynamic-programming/src/pers
 [graph]: https://github.com/luolanmeet/algorithm/tree/master/graph/src/pers
