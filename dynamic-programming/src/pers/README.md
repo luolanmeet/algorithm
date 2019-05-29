@@ -13,6 +13,7 @@ CountSubstrings | `LC中等题`[647. 回文子串](https://leetcode-cn.com/probl
 MinSteps | `LC中等题`[650. 只有两个键的键盘](https://leetcode-cn.com/problems/2-keys-keyboard/submissions/)
 DeleteAndEarn | `LC中等题`[740. 删除与获得点数](https://leetcode-cn.com/problems/delete-and-earn/)
 StoneGame | `LC中等题`[877. 石子游戏](https://leetcode-cn.com/problems/stone-game/)
+SubarrayBitwiseORs | `LC中等题`[898. 子数组按位或操作](https://leetcode-cn.com/problems/bitwise-ors-of-subarrays/)
 MinFallingPathSum | `LC中等题`[931. 下降路径最小和](https://leetcode-cn.com/problems/minimum-falling-path-sum/comments/)
 MincostTickets | `LC中等题`[983. 最低票价](https://leetcode-cn.com/problems/minimum-cost-for-tickets/submissions/)
 DivisorGame | `LC简单题`[1025. 除数博弈](https://leetcode-cn.com/problems/divisor-game/comments/)
