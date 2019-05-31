@@ -6,4 +6,5 @@
 
 类名|内容
 ---|---
-Subsets | `LC中等题`[78. Subsets ](https://leetcode-cn.com/problems/subsets/)
+CombinationSum | `LC中等题`[39. 组合总和](https://leetcode-cn.com/problems/combination-sum/submissions/)
+Subsets | `LC中等题`[78. Subsets](https://leetcode-cn.com/problems/subsets/)
