@@ -1,8 +1,9 @@
-# 动态规划的算法  
+# 动态规划的算法
 > LC --> leetcode上的题
 
 类名|内容
 ---|---
+ZeroOneBag  | 01背包问题
 MaxSubArray | `LC简单题`[53. 最大子序和](https://leetcode-cn.com/problems/maximum-subarray/submissions/)
 ClimbStairs | `LC简单题`[70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)
 MaxProfit | `LC中等题`[309. 最佳买卖股票时机含冷冻期](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/submissions/)
