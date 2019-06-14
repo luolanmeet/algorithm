@@ -14,6 +14,7 @@ ShoppingOffers | `LC中等题`[638. 大礼包](https://leetcode-cn.com/problems/
 FindLongestChain | `LC中等题`[646. 最长数对链](https://leetcode-cn.com/problems/maximum-length-of-pair-chain/)
 CountSubstrings | `LC中等题`[647. 回文子串](https://leetcode-cn.com/problems/palindromic-substrings/submissions/)
 MinSteps | `LC中等题`[650. 只有两个键的键盘](https://leetcode-cn.com/problems/2-keys-keyboard/submissions/)
+FindLength | `LC中等题`[718. 最长重复子数组](https://leetcode-cn.com/problems/maximum-length-of-repeated-subarray/comments/)
 DeleteAndEarn | `LC中等题`[740. 删除与获得点数](https://leetcode-cn.com/problems/delete-and-earn/)
 StoneGame | `LC中等题`[877. 石子游戏](https://leetcode-cn.com/problems/stone-game/)
 SubarrayBitwiseORs | `LC中等题`[898. 子数组按位或操作](https://leetcode-cn.com/problems/bitwise-ors-of-subarrays/)
