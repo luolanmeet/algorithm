@@ -16,6 +16,7 @@ CountSubstrings | `LC中等题`[647. 回文子串](https://leetcode-cn.com/probl
 MinSteps | `LC中等题`[650. 只有两个键的键盘](https://leetcode-cn.com/problems/2-keys-keyboard/submissions/)
 FindLength | `LC中等题`[718. 最长重复子数组](https://leetcode-cn.com/problems/maximum-length-of-repeated-subarray/comments/)
 DeleteAndEarn | `LC中等题`[740. 删除与获得点数](https://leetcode-cn.com/problems/delete-and-earn/)
+LenLongestFibSubseq | `LC中等题`[873. 最长的斐波那契子序列的长度](https://leetcode-cn.com/problems/length-of-longest-fibonacci-subsequence/comments/)
 StoneGame | `LC中等题`[877. 石子游戏](https://leetcode-cn.com/problems/stone-game/)
 SubarrayBitwiseORs | `LC中等题`[898. 子数组按位或操作](https://leetcode-cn.com/problems/bitwise-ors-of-subarrays/)
 MinFallingPathSum | `LC中等题`[931. 下降路径最小和](https://leetcode-cn.com/problems/minimum-falling-path-sum/comments/)
