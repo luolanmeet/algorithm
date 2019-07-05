@@ -7,5 +7,6 @@
 类名|内容
 ---|---
 CombinationSum | `LC中等题`[39. 组合总和](https://leetcode-cn.com/problems/combination-sum/submissions/)
+CombinationSum | `LC中等题`[46. 全排列](https://leetcode-cn.com/problems/permutations/)
 Subsets | `LC中等题`[78. Subsets](https://leetcode-cn.com/problems/subsets/)
 CanPartitionKSubsets | `LC中等题`[698. 划分为k个相等的子集](https://leetcode-cn.com/problems/partition-to-k-equal-sum-subsets/comments/)
