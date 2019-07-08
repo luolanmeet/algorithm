@@ -11,6 +11,8 @@ public class CorpFlightBookings {
     
     /**
      * 使用区间加法
+     * 这道题中，只需要做累加，然后最后处理成返回结果即可
+     * 注意这里的下标是从0开始算的
      */
     public int[] corpFlightBookings(int[][] bookings, int n) {
         
