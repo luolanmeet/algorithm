@@ -10,6 +10,7 @@
 🎰 [hash-table]  |  哈希表
 🔗 [linked-list]  |  链表
 🛢 [stack] |  栈
+🍥 [other] |  一些算法思路
 
 [backtracking]: https://github.com/luolanmeet/algorithm/tree/master/backtracking/src/pers
 [binary-tree]: https://github.com/luolanmeet/algorithm/tree/master/binary-tree/src/pers
@@ -19,3 +20,4 @@
 [hash-table]: https://github.com/luolanmeet/algorithm/tree/master/hash-table/src/pers
 [linked-list]: https://github.com/luolanmeet/algorithm/tree/master/linked-list/src/pers
 [stack]: https://github.com/luolanmeet/algorithm/tree/master/stack/src/pers
+[other]: https://github.com/luolanmeet/algorithm/tree/master/other/src/pers
