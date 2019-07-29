@@ -10,7 +10,7 @@
 🎰 [hash-table]  |  哈希表
 🔗 [linked-list]  |  链表
 🛢 [stack] |  栈
-🍥 [other] |  一些算法思路
+❄️ [other] | 一些算法和数据结构 
 
 [backtracking]: https://github.com/luolanmeet/algorithm/tree/master/backtracking/src/pers
 [binary-tree]: https://github.com/luolanmeet/algorithm/tree/master/binary-tree/src/pers

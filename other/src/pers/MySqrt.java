@@ -1,5 +1,9 @@
 package pers;
 
+/**
+ * 69. x 的平方根
+ * https://leetcode-cn.com/problems/sqrtx/
+ */
 public class MySqrt {
 
     // 牛顿迭代法
