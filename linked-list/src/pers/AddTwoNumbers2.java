@@ -22,8 +22,7 @@ public class AddTwoNumbers2 {
         
         Stack<ListNode> s1 = new Stack<>();
         Stack<ListNode> s2 = new Stack<>();
-        Stack<Integer> s3 = new Stack<>();
-        
+
         while (l1 != null) {
             s1.push(l1);
             l1 = l1.next;
@@ -34,26 +33,29 @@ public class AddTwoNumbers2 {
         }
 
         ListNode node = null;
-        
-        while (!s1.isEmpty() || !s2.isEmpty() || !s3.isEmpty()) {
+
+        Integer add = 0;
+
+        while (!s1.isEmpty() || !s2.isEmpty()) {
             
             int a = s1.isEmpty() ? 0 : s1.pop().val;
             int b = s2.isEmpty() ? 0 : s2.pop().val;
-            int c = s3.isEmpty() ? 0 : s3.pop();
-            
-            int sum = a + b + c;
+
+            int sum = a + b + add;
             
             ListNode temp = new ListNode(sum % 10);
             temp.next = node;
             node = temp;
             
-            sum /= 10;
-            
-            if (sum != 0) {
-                s3.push(sum);
-            }
+            add = sum / 10;
         }
-        
+
+        if (add != 0) {
+            ListNode temp = new ListNode(add);
+            temp.next = node;
+            node = temp;
+        }
+
         return node;
     }
     
