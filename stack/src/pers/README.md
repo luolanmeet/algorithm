@@ -14,3 +14,4 @@ AsteroidCollision     | `LC中等题`[735. 行星碰撞](https://leetcode-cn.com
 DailyTemperatures     | `LC中等题`[739. 每日温度](https://leetcode-cn.com/problems/daily-temperatures/)
 ScoreOfParentheses    | `LC中等题`[856. 括号的分数](https://leetcode-cn.com/problems/score-of-parentheses/)
 StockSpanner          | `LC中等题`[901. 股票价格跨度](https://leetcode-cn.com/problems/online-stock-span/)
+IsValid               | `LC中等题`[1003. 检查替换后的词是否有效](https://leetcode-cn.com/problems/check-if-word-is-valid-after-substitutions/)
