@@ -21,3 +21,4 @@ OddEvenList         | `LC中等题`[328. 奇偶链表](https://leetcode-cn.com/p
 Flatten             | `LC中等题`[430. 扁平化多级双向链表](https://leetcode-cn.com/problems/flatten-a-multilevel-doubly-linked-list/)
 AddTwoNumbers2      | `LC中等题`[445. 两数相加 II](https://leetcode-cn.com/problems/add-two-numbers-ii/)
 SplitListToParts    | `LC中等题`[725. 分隔链表](https://leetcode-cn.com/problems/split-linked-list-in-parts/)
+NextLargerNodes     | `LC中等题`[1019. 链表中的下一个更大节点](https://leetcode-cn.com/problems/next-greater-node-in-linked-list/)
