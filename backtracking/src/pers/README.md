@@ -9,6 +9,7 @@
 类名|内容
 ---|---
 CombinationSum | `LC中等题`[39. 组合总和](https://leetcode-cn.com/problems/combination-sum/submissions/)
+CombinationSum2 | `LC中等题`[40. 组合总和 II](https://leetcode-cn.com/problems/combination-sum-ii/submissions/)
 Permute | `LC中等题`[46. 全排列](https://leetcode-cn.com/problems/permutations/)
 PermuteUnique | `LC中等题`[47. 全排列 II](https://leetcode-cn.com/problems/permutations-ii/submissions/)
 Combine | `LC中等题`[77. 组合](https://leetcode-cn.com/problems/combinations/submissions/)
