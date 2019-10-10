@@ -67,10 +67,6 @@ public class IsAdditiveNumber {
         System.out.println(obj.isAdditiveNumber("1023"));
         System.out.println(obj.isAdditiveNumber("112358"));
         System.out.println(obj.isAdditiveNumber("199100199"));
-    
-//        String str = "abc";
-//        System.out.println(str.substring(1));
     }
-    
     
 }
