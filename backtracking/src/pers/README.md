@@ -18,4 +18,5 @@ Combine | `LC中等题`[77. 组合](https://leetcode-cn.com/problems/combination
 Subsets | `LC中等题`[78. 子集](https://leetcode-cn.com/problems/subsets/)
 Exist | `LC中等题`[79. 单词搜索](https://leetcode-cn.com/problems/word-search/)
 SubsetsWithDup | `LC中等题`[90. 子集 II](https://leetcode-cn.com/problems/subsets-ii/)
+Partition | `LC中等题`[131. 分割回文串](https://leetcode-cn.com/problems/palindrome-partitioning/)
 CanPartitionKSubsets | `LC中等题`[698. 划分为k个相等的子集](https://leetcode-cn.com/problems/partition-to-k-equal-sum-subsets/comments/)
