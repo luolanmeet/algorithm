@@ -2,7 +2,7 @@ package pers;
 
 /**
  * 1079. 活字印刷
- * https://leetcode-cn.com/problems/letter-tile-possibilities/comments/
+ * https://leetcode-cn.com/problems/letter-tile-possibilities/
  *
  * 另一种解法：计算出全排列的数量，然后再除以每个重复的排列个数。
  * 例如"AAABBC"组成的6个字母的排列数为 A(6，6) / [A(3,3)*A(2,2)]。
