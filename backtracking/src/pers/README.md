@@ -8,8 +8,9 @@
 
 类名|内容
 ---|---
-IsMatch | `LC中等题`[10. 正则表达式匹配](https://leetcode-cn.com/problems/regular-expression-matching/)
+IsMatch | `LC困难题`[10. 正则表达式匹配](https://leetcode-cn.com/problems/regular-expression-matching/)
 LetterCombinations | `LC中等题`[17. 电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/)
+SolveSudoku | `LC困难题`[37. 解数独](https://leetcode-cn.com/problems/sudoku-solver/submissions/)
 CombinationSum | `LC中等题`[39. 组合总和](https://leetcode-cn.com/problems/combination-sum/submissions/)
 CombinationSum2 | `LC中等题`[40. 组合总和 II](https://leetcode-cn.com/problems/combination-sum-ii/submissions/)
 Permute | `LC中等题`[46. 全排列](https://leetcode-cn.com/problems/permutations/)
