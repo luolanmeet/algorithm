@@ -15,6 +15,7 @@ CombinationSum | `LC中等题`[39. 组合总和](https://leetcode-cn.com/problem
 CombinationSum2 | `LC中等题`[40. 组合总和 II](https://leetcode-cn.com/problems/combination-sum-ii/submissions/)
 Permute | `LC中等题`[46. 全排列](https://leetcode-cn.com/problems/permutations/)
 PermuteUnique | `LC中等题`[47. 全排列 II](https://leetcode-cn.com/problems/permutations-ii/submissions/)
+SolveNQueens | `LC困难题`[51. N皇后](https://leetcode-cn.com/problems/n-queens/submissions/)
 GetPermutation | `LC中等题`[60. 第k个排列](https://leetcode-cn.com/problems/permutation-sequence/submissions/)
 Combine | `LC中等题`[77. 组合](https://leetcode-cn.com/problems/combinations/submissions/)
 Subsets | `LC中等题`[78. 子集](https://leetcode-cn.com/problems/subsets/)
