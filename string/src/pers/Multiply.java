@@ -34,6 +34,7 @@ public class Multiply {
     
     public static void main(String[] args) {
         Multiply obj = new Multiply();
+        System.out.println(Object.class.isAssignableFrom(obj.getClass()));
         System.out.println(obj.multiply("123", "45"));
         System.out.println(obj.multiply("123", "4521"));
         System.out.println(obj.multiply("4521", "123"));
