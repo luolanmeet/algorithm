@@ -42,7 +42,7 @@ public class MergeSort {
         }
     
         while (rArrIndex < rArr.length) {
-            resArr[resArrIndex++] = lArr[rArrIndex++];
+            resArr[resArrIndex++] = rArr[rArrIndex++];
         }
         
         return resArr;
