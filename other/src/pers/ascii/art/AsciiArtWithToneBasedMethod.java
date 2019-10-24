@@ -53,10 +53,12 @@ public class AsciiArtWithToneBasedMethod {
         }
 
         // 输出结果
-        for (int i = minX; i < width; i++) {
-            System.out.println(Arrays.toString(res[i]));
+        for (int j = minY; j < height; j++) {
+            for (int i = minX; i < width; i++) {
+                System.out.print(res[i][j]);
+            }
+            System.out.println();
         }
-        
     }
 
 }
