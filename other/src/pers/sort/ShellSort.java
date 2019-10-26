@@ -1,5 +1,7 @@
 package pers.sort;
 
+import java.util.Arrays;
+
 /**
  * 希尔排序
  * 希尔排序是把记录按下标的一定增量分组，对每组使用直接插入排序算法排序；
@@ -12,7 +14,42 @@ package pers.sort;
 public class ShellSort {
     
     public static void sort(int[] array) {
-    
+
+        int len = array.length;
+        // 增量
+        int gap = len;
+
+        while (gap > 0) {
+
+            for (int i = gap; i < len; i++) {
+
+                int tmp = array[i];
+                int j = i - gap;
+
+                // 跨增量排序
+                while (j >= 0 && array[j] > tmp) {
+                    array[j + gap] = array[j];
+                    j -= gap;
+                }
+                array[j + gap] = tmp;
+            }
+
+            gap /= 2;
+        }
     }
-    
+
+    public static void main(String[] args) {
+        int[] array1 = {5,1,1,2,0,0,0,3};
+        sort(array1);
+        System.out.println(Arrays.toString(array1));
+
+        int[] array2 = {10,10,-4,7,5,5,1,1,-1,2,110,20,120};
+        sort(array2);
+        System.out.println(Arrays.toString(array2));
+
+        int[] array3 = {15,2};
+        sort(array3);
+        System.out.println(Arrays.toString(array3));
+    }
+
 }
