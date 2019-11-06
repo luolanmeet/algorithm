@@ -26,19 +26,21 @@ public class CountingSort {
         for (int i = 0; i < array.length; ++i) {
             count[array[i] - min] += 1;
         }
-        // 计算每个元素的最终位置
-        // count[0] 的元素的最终位置的最大位置 是 0
-        // count[1] 的元素的最终位置的最大位置 是 count[0] + count[1]
-        // count[2] 的元素的最终位置的最大位置 是 count[0] + count[1] + count[2]
+        // 计算每个元素的最终位置的最大值，
+        // count[0] 的元素的最终位置的最大值 是 count[0]，
+        //   最小元素的最终位置的最大值就是本身出现的次数
+        // count[1] 的元素的最终位置的最大值 是 count[0] + count[1]，
+        //   非最小元素的最终位置的最大值就是比自己小的元素的个数加上自己元素的个数
+        // count[2] 的元素的最终位置的最大值 是 count[0] + count[1] + count[2]
         for (int i = 1; i < count.length; i++) {
             count[i] = count[i] + count[i - 1];
         }
 
         int result[] = new int[array.length];
 
-        // 按存取的方式取出的元素
+        // count数组此时存的是对应元素值排序后的位置
         for (int i = 0; i < array.length; i++) {
-            // --count[*]，最大位置往后移动
+            // --count[*]，位置往后移动
             result[--count[array[i] - min]] = array[i];
         }
         return result;
