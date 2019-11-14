@@ -7,6 +7,8 @@ import java.util.List;
 
 /**
  * 桶排序
+ * 划分的时候其实没有破坏稳定性，
+ * 但最后选择什么排序算法是会影响稳定性的
  */
 public class BucketSort {
 

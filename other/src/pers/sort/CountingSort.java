@@ -5,6 +5,8 @@ import java.util.Arrays;
 /**
  * 计数排序，非比较的排序算法
  * 重点是明白算最终位置的逻辑
+ *
+ * 计算排序是稳定的
  */
 public class CountingSort {
 

@@ -21,7 +21,11 @@ import java.util.Arrays;
  * 快速排序主要工作在于划分阶段，而不需要再去合并子问题的解。
  * 
  * 合并排序和快速排序都是 分治法 的思想
+ *
+ * 快速排序是不稳定的
+ * 例子： 1 1 0 ， 以第一个元素为中轴，最终第一个1会被交换到最后
  */
+
 public class Quicksort {
 
     public static void sort(int[] array) {
