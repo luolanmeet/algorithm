@@ -5,6 +5,8 @@ import java.util.Arrays;
 /**
  * 冒泡排序
  * 把小（大）的元素往前（后）调
+ *
+ * 冒泡排序是稳定的
  */
 public class BubbleSort {
 
