@@ -10,7 +10,38 @@ import java.util.List;
  * 瑞士卷？
  */
 public class SpiralOrder {
-    
+
+    public List<Integer> spiralOrder2(int[][] matrix) {
+
+        int width = matrix.length;
+        if (width == 0) return Collections.emptyList();
+        int height = matrix[0].length;
+
+        int size = width * height;
+        List<Integer> res = new ArrayList<>(size);
+        boolean[][] bs = new boolean[width][height];
+
+        int i = 0, j = 0, di = 0, dj = 1;
+
+        while (size-- > 0) {
+
+            res.add(matrix[i][j]);
+            bs[i][j] = true;
+
+            // 用取模的方式判断是否需要改变方向
+            if ((i + di) < 0 || (j + dj) < 0 || bs[(i + di) % width][(j + dj) % height]) {
+                // (0,1)->(1,0)->(0,-1)->(-1,0)
+                int tmp = di;
+                di = dj;
+                dj = -tmp;
+            }
+            i += di;
+            j += dj;
+        }
+
+        return res;
+    }
+
     public List<Integer> spiralOrder(int[][] matrix) {
     
         if (matrix.length == 0) {
@@ -80,12 +111,12 @@ public class SpiralOrder {
     
     public static void main(String[] args) {
         SpiralOrder obj = new SpiralOrder();
-        System.out.println(obj.spiralOrder(new int[][]{
+        System.out.println(obj.spiralOrder2(new int[][]{
                 {1, 2, 3, 4},
                 {5, 6, 7, 8},
                 {9,10,11,12}
         }));
-        System.out.println(obj.spiralOrder(new int[][]{
+        System.out.println(obj.spiralOrder2(new int[][]{
                 {1, 2, 3, 4}
         }));
     }
