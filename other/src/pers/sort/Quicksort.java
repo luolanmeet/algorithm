@@ -34,9 +34,6 @@ public class Quicksort {
 
     }
 
-    /**
-     * 以第一个元素为中轴，也就是array[left]
-     */
     private static void sort(int[] array, int left, int right) {
 
         if (left >= right) {
@@ -46,18 +43,18 @@ public class Quicksort {
         int i = left;
         int j = right;
 
+        // 以array[left]为枢轴
         while (i < j) {
 
-            for (; i <= right; i++) {
-                if (array[left] < array[i]) {
-                    break;
-                }
+            // 找到比枢轴大的元素，之后要移动到枢轴的右边
+            // 注意，i初始值就是left，因此等于 array[left] 的也排除了 ，否则i会停留在left位置
+            while (i <= right && array[i] <= array[left]) {
+                i++;
             }
 
-            for (; j >= left; j--) {
-                if (array[left] >= array[j]) {
-                    break;
-                }
+            // 找到比枢轴小的元素，之后要移动到枢轴的左边
+            while (j >= left && array[j] > array[left]) {
+                j--;
             }
 
             if (i < j) {
@@ -65,12 +62,12 @@ public class Quicksort {
                 array[i] = array[j];
                 array[j] = tmp;
             }
-
         }
 
-        int tmp = array[left];
-        array[left] = array[j];
-        array[j] = tmp;
+        // j 就是枢轴最终的位置
+        int tmp = array[j];
+        array[j] = array[left];
+        array[left] = tmp;
 
         sort(array, left, j - 1);
         sort(array, j + 1, right);
