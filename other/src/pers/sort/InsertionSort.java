@@ -27,9 +27,9 @@ public class InsertionSort {
 
             while (tmpIndex >= 0 && array[tmpIndex] > tmpVal) {
                 array[tmpIndex + 1] = array[tmpIndex];
-                array[tmpIndex] = tmpVal;
                 tmpIndex--;
             }
+            array[tmpIndex + 1] = tmpVal;
         }
 
     }
