@@ -14,29 +14,26 @@ import java.util.Arrays;
  *  希尔排序是不稳定的，存在增量，没有按照顺序比较，是会破坏稳定性的
  */
 public class ShellSort {
-    
+
     public static void sort(int[] array) {
 
         int len = array.length;
-        // 增量
-        int gap = len;
 
-        while (gap > 0) {
+        // gap 就是增量
+        for (int gap = len; gap > 0;  gap /= 2) {
 
+            // 把 gap 换成 1, 就完全是一个插入排序了
             for (int i = gap; i < len; i++) {
 
-                int tmp = array[i];
-                int j = i - gap;
+                int tmpVal = array[i];
+                int tmpIndex = i - gap;
 
-                // 跨增量排序
-                while (j >= 0 && array[j] > tmp) {
-                    array[j + gap] = array[j];
-                    j -= gap;
+                while (tmpIndex >= 0 && array[tmpIndex] > tmpVal) {
+                    array[tmpIndex + gap] = array[tmpIndex];
+                    tmpIndex -= gap;
                 }
-                array[j + gap] = tmp;
+                array[tmpIndex + gap] = tmpVal;
             }
-
-            gap /= 2;
         }
     }
 
