@@ -20,30 +20,18 @@ public class InsertionSort {
     
     public static void sort(int[] array) {
         
-        for (int i = 0; i < array.length; i++) {
-        
-            for (int j = i + 1; j < array.length; j++) {
-            
-                if (array[j] >= array[i]) {
-                    continue;
-                }
-                
-                // 把新的元素插入到已经排序好的序列中
-                int tmpIndex = j;
-                while (tmpIndex > 0) {
-                    
-                    if (array[tmpIndex] >= array[tmpIndex-1]) {
-                        break;
-                    }
-                    
-                    int tmpVal = array[tmpIndex];
-                    array[tmpIndex] = array[tmpIndex-1];
-                    array[tmpIndex-1] = tmpVal;
-                    tmpIndex--;
-                }
+        for (int i = 1; i < array.length; i++) {
+
+            int tmpVal = array[i];
+            int tmpIndex = i - 1;
+
+            while (tmpIndex >= 0 && array[tmpIndex] > tmpVal) {
+                array[tmpIndex + 1] = array[tmpIndex];
+                array[tmpIndex] = tmpVal;
+                tmpIndex--;
             }
-        
         }
+
     }
     
     public static void main(String[] args) {
