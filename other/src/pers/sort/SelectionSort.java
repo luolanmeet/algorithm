@@ -13,30 +13,26 @@ import java.util.Arrays;
  * 例子： 1 1 0 （找最小，最前的1交换到最后）
  */
 public class SelectionSort {
-    
+
     public static void sort(int[] array) {
-    
-        int putIndex = array.length - 1;
-        
-        for (int len = array.length; len > 0; len--) {
-        
+
+        for (int putIndex = array.length - 1; putIndex > 0; putIndex--) {
+
             int tmpIndex = 0;
             int tmpMax = array[0];
-            // 从此次循环中找到最大的值
-            // 不稳定的原因 1 0 0 第一次循环后 原来最后的0会交换到最前边
-            for (int i = 1; i < len; i++) {
-                if (tmpMax < array[i]) {
+
+            for (int i = 1; i <= putIndex; i++) {
+                if (array[i] > tmpMax) {
                     tmpIndex = i;
                     tmpMax = array[i];
                 }
             }
-    
+
             array[tmpIndex] = array[putIndex];
-            array[putIndex--] = tmpMax;
+            array[putIndex] = tmpMax;
         }
-        
     }
-    
+
     public static void main(String[] args) {
         int[] array1 = {5,1,1,2,0,0,0};
         sort(array1);
