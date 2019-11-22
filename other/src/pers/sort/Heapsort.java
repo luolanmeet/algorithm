@@ -35,7 +35,7 @@ public class Heapsort {
 
     private static void adjustHeap(int[] array, int i, int len) {
 
-        // 父节点要大于子节点 array[i] > array[i*2+1] array[i*2+2]
+        // 父节点要大于或等于子节点 array[i] >= array[i*2+1] array[i*2+2]
 
         // while(有子节点)
         while (i * 2 + 1 < len) {
