@@ -7,6 +7,7 @@
 🐌 [dynamic-programming]  |  动态规划
 🗺 [graph]  |  图
 🐍 [greedy]  |  贪心算法
+📚 [array]  |  数组
 🎰 [hash-table]  |  哈希表
 🔗 [linked-list]  |  链表
 🛢 [stack] |  栈
@@ -17,6 +18,7 @@
 [dynamic-programming]: https://github.com/luolanmeet/algorithm/tree/master/dynamic-programming/src/pers
 [graph]: https://github.com/luolanmeet/algorithm/tree/master/graph/src/pers
 [greedy]: https://github.com/luolanmeet/algorithm/tree/master/greedy/src/pers
+[array]：https://github.com/luolanmeet/algorithm/tree/master/array/src/pers
 [hash-table]: https://github.com/luolanmeet/algorithm/tree/master/hash-table/src/pers
 [linked-list]: https://github.com/luolanmeet/algorithm/tree/master/linked-list/src/pers
 [stack]: https://github.com/luolanmeet/algorithm/tree/master/stack/src/pers
