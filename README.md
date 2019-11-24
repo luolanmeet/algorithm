@@ -18,7 +18,7 @@
 [dynamic-programming]: https://github.com/luolanmeet/algorithm/tree/master/dynamic-programming/src/pers
 [graph]: https://github.com/luolanmeet/algorithm/tree/master/graph/src/pers
 [greedy]: https://github.com/luolanmeet/algorithm/tree/master/greedy/src/pers
-[array]：https://github.com/luolanmeet/algorithm/tree/master/array/src/pers
+[array]: https://github.com/luolanmeet/algorithm/tree/master/array/src/pers
 [hash-table]: https://github.com/luolanmeet/algorithm/tree/master/hash-table/src/pers
 [linked-list]: https://github.com/luolanmeet/algorithm/tree/master/linked-list/src/pers
 [stack]: https://github.com/luolanmeet/algorithm/tree/master/stack/src/pers
