@@ -1,43 +1,43 @@
 package pers;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Stack;
 
 /**
  * 39. 组合总和
- * https://leetcode-cn.com/problems/combination-sum/submissions/
+ * https://leetcode-cn.com/problems/combination-sum/
  * @author cck
  */
 public class CombinationSum {
     
-    public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        
-        List<List<Integer>> res = new ArrayList<>();
-        method(res, candidates, 0, 0, new ArrayList<Integer>(), target);
+    List<List<Integer>> res = new ArrayList<>();
+    
+    public List<List<Integer>> combinationSum(int[] nums, int target) {
+        res.clear();
+        Arrays.sort(nums);
+        method(nums, 0, 0, new Stack<Integer>(), target);
         return res;
     }
-
-    private void method(
-            List<List<Integer>> res, int[] candidates, 
-            int index, int sum, List<Integer> now, int target) {
+    
+    private void method(int[] nums, int idx, int sum, Stack<Integer> stack, int target) {
         
         if (sum == target) {
-            res.add(new ArrayList<>(now));
+            res.add(new ArrayList<>(stack));
             return ;
         }
-        if (sum > target || index >= candidates.length) {
-            return ;
-        }
-
-        // 不使用candidates[index] 这个数字
-        method(res, candidates, index + 1, sum, new ArrayList<>(now), target);
-        List<Integer> temp = new ArrayList<>(now);
         
-        while (sum < target) {
-            temp.add(candidates[index]);
-            sum += candidates[index];
-            method(res, candidates, index + 1, sum, temp, target);
+        // sum + nums[idx] > target 加上nums[idx]都大于 target， 那之后的都会大于target
+        if (idx >= nums.length || sum + nums[idx] > target) {
+            return ;
         }
+        
+        stack.push(nums[idx]);
+        method(nums, idx, sum + nums[idx], stack, target);
+        
+        stack.pop();
+        method(nums, idx + 1, sum, stack, target);
     }
     
     public static void main(String[] args) {
