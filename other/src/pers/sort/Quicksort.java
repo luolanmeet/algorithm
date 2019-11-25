@@ -48,12 +48,12 @@ public class Quicksort {
 
             // 找到比枢轴大的元素，之后要移动到枢轴的右边
             // 注意，i初始值就是left，因此等于 array[left] 的也排除了 ，否则i会停留在left位置
-            while (i <= right && array[i] <= array[left]) {
+            while (i < right && array[i] <= array[left]) {
                 i++;
             }
 
             // 找到比枢轴小的元素，之后要移动到枢轴的左边
-            while (j >= left && array[j] > array[left]) {
+            while (j > left && array[j] > array[left]) {
                 j--;
             }
 
