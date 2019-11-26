@@ -5,70 +5,52 @@ package pers;
  * 典型的回溯，注意用used表示是否使用过此字母
  */
 public class Exist {
-    
+
     public boolean exist(char[][] board, String word) {
-    
+
         char[] cs = word.toCharArray();
+
         boolean[][] used = new boolean[board.length][board[0].length];
-    
+
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[0].length; j++) {
-                
-                if (board[i][j] != cs[0]) {
-                    continue;
-                }
-    
-                used[i][j] = true;
-                if (backtrack(board, cs, used, i, j, 1)) {
+                if (method(board, used, cs, i, j, 0)) {
                     return true;
                 }
-                used[i][j] = false;
             }
         }
-    
+
         return false;
     }
-    
-    private boolean backtrack(char[][] board, char[] cs, boolean[][] used, int i, int j, int index) {
-    
-        if (index >= cs.length) {
+
+    private boolean method(char[][] board, boolean[][] used, char[] cs, int i, int j, int idx) {
+
+        if (idx >= cs.length) return true;
+
+        if (i < 0 || i >= board.length ||
+                j < 0 || j >= board[0].length ||
+                used[i][j] || board[i][j] != cs[idx]) {
+
+            return false;
+        }
+
+        used[i][j] = true;
+
+        // 四个方向查找
+        if (method(board, used, cs, i + 1, j, idx + 1)) {
             return true;
         }
-        
-        // 从当前的四个方向找
-        // 往上找
-        if (i > 0 && !used[i-1][j] && board[i-1][j] == cs[index]) {
-            used[i-1][j] = true;
-            if (backtrack(board, cs, used, i-1, j, index+1)) {
-                return true;
-            }
-            used[i-1][j] = false;
+        if (method(board, used, cs, i - 1, j, idx + 1)) {
+            return true;
         }
-        // 往下找
-        if (i < board.length - 1 && !used[i+1][j] && board[i+1][j] == cs[index]) {
-            used[i+1][j] = true;
-            if (backtrack(board, cs, used, i+1, j, index+1)) {
-                return true;
-            }
-            used[i+1][j] = false;
+        if (method(board, used, cs, i, j + 1, idx + 1)) {
+            return true;
         }
-        // 往左找
-        if (j > 0 && !used[i][j-1] && board[i][j-1] == cs[index]) {
-            used[i][j-1] = true;
-            if (backtrack(board, cs, used, i, j-1, index+1)) {
-                return true;
-            }
-            used[i][j-1] = false;
+        if (method(board, used, cs, i, j - 1, idx + 1)) {
+            return true;
         }
-        // 往右找
-        if (j < board[0].length - 1 && !used[i][j+1] && board[i][j+1] == cs[index]) {
-            used[i][j+1] = true;
-            if (backtrack(board, cs, used, i, j+1, index+1)) {
-                return true;
-            }
-            used[i][j+1] = false;
-        }
-        
+
+        used[i][j] = false;
         return false;
     }
     
