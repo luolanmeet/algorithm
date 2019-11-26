@@ -7,7 +7,7 @@ import java.util.Stack;
 
 /**
  * 40. 组合总和 II
- * https://leetcode-cn.com/problems/combination-sum-ii/submissions/
+ * https://leetcode-cn.com/problems/combination-sum-ii/
  */
 public class CombinationSum2 {
     
@@ -34,13 +34,19 @@ public class CombinationSum2 {
             return ;
         }
 
-        // 这里是要 candidates[index] 这个数
+        // 这里是要 candidates[index] 这个数，和这个数相关的组合都在这次调用中产生
         stack.push(candidates[index]);
         backtrack(res, candidates, stack, index + 1, sum + candidates[index], target);
         stack.pop();
     
-        // 做了去重
-        // 这里是不要 candidates[index] 这个数，并且不要和 candidates[index] 值一样的数
+        // 假设数组是 1,1,1,1,2
+        // 去重的思路：
+        // 要一个重复的，然后就不要了【backtrack(1)，下一个数】,【backtrack()，不要1，跳到2开始，产生没有1的组合，2】
+        // 然后由要了一个重复的数的那次回溯，来负责要第二个重复的。【backtrack(1,1)，下一个数】,【backtrack(1)，不要1，跳到2开始，产生1,2】
+        // 再由要了两个重复的那次回溯来负责要第三个重复的。【backtrack(1,1,1)，下一个数】,【backtrack(1,1)，不要1，跳到2开始，产生1,1,2】
+        // 再由要了三个重复的那次回溯来负责要第四个重复的。【backtrack(1,1,1,1)，下一个数，产生1,1,1,1,2】,【backtrack(1,1,1)，不要1，跳到2开始，产生1,1,1,2】
+        
+        // 去重,不要candidates[index]这个数，并且不要和candidates[index]值一样的数
         for (int i = index + 1; i < candidates.length; i++) {
             
             if (candidates[i] == candidates[index]) {
@@ -57,6 +63,7 @@ public class CombinationSum2 {
         System.out.println(obj.combinationSum2(new int[]{10,1,2,7,6,1,5}, 8));
         System.out.println(obj.combinationSum2(new int[]{2,5,2,1,2}, 5));
         System.out.println(obj.combinationSum2(new int[]{2,2,2}, 2));
+        System.out.println(obj.combinationSum2(new int[]{1,1,1,1,2}, 2));
     }
     
 }
