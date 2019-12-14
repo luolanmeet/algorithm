@@ -62,35 +62,29 @@ public class BinaryTreeDepth {
     }
     
     /**
-     * 递归求解最小深度
+     * 递归求解最小深度（最小深度 从根节点到最近的叶子节点）
      * （加截断判断会更好）
      * @param root
      * @return
      */
     public int minDepthRecursion(TreeNode root) {
+    
+        if (root == null) return 0;
+    
+        boolean isLCNull = 	root.left == null;
+        boolean isRCNull = 	root.right == null;
+    
+        if (isLCNull && isRCNull) return 1;
+    
+        if (isRCNull) return minDepthRecursion(root.left) + 1;
         
-        if (root == null) {
-            return 0;
-        }
+        if (isLCNull) return minDepthRecursion(root.right) + 1;
         
-        if (root.left == null && root.right == null) {
-            return 1;
-        }
-        if (root.left != null && root.right == null) {
-            return minDepthRecursion(root.left) + 1;
-        }
-        if (root.left == null && root.right != null) {
-            return minDepthRecursion(root.right) + 1;
-        }
-        
-        int leftDepth = minDepthRecursion(root.left);
-        int rightDepth = minDepthRecursion(root.right);
-        
-        return Math.min(leftDepth, rightDepth) + 1;
+        return Math.min(minDepthRecursion(root.left), minDepthRecursion(root.right)) + 1;
     }
     
     /**
-     * 采用层次遍历求解最大深度
+     * 采用层次遍历求解最小深度
      * @param root
      * @return
      */
