@@ -27,6 +27,8 @@ MaximumBinaryTree   | `LC中等题`[654. 最大二叉树](https://leetcode-cn.co
 WidthOfBinaryTree   | `LC中等题`[662. 二叉树最大宽度](https://leetcode-cn.com/problems/maximum-width-of-binary-tree/)
 PruneTree           | `LC中等题`[814. 二叉树剪枝](https://leetcode-cn.com/problems/binary-tree-pruning/)
 DistanceK           | `LC中等题`[863. 二叉树中所有距离为 K 的结点](https://leetcode-cn.com/problems/all-nodes-distance-k-in-binary-tree/)
+AllPossibleFBT      | `LC中等题`[894. 所有可能的满二叉树](https://leetcode-cn.com/problems/all-possible-full-binary-trees/)
+RangeSumBST         | `LC简单题`[938. 二叉搜索树的范围和](https://leetcode-cn.com/problems/range-sum-of-bst/)
 FlipEquiv           | `LC中等题`[951. 翻转等价二叉树](https://leetcode-cn.com/problems/flip-equivalent-binary-trees/)
 CompleteTree        | `LC中等题`[958. 二叉树的完全性检验](https://leetcode-cn.com/problems/check-completeness-of-a-binary-tree/)
 UnivalTree          | `LC简单题`[965. 单值二叉树](https://leetcode-cn.com/problems/univalued-binary-tree/)
