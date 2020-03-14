@@ -17,7 +17,7 @@ import java.util.Iterator;
  */
 public class Mandelbrot {
 
-    private static final String img_url = "mandelbrot.png";
+    private static final String img_url = "img/mandelbrot.png";
     private static final int width = 1300;
     private static final int heigth = 1000;
 
@@ -64,9 +64,9 @@ public class Mandelbrot {
                         color[2] = 125;
                     }
 
-                    //设置画笔颜色
+                    // 设置画笔颜色
                     graphics.setColor(new Color(color[0], color[1], color[2]));
-                    //画点
+                    // 画线
                     graphics.drawLine(x, y, x, y);
                     graphics.drawLine(x, heigth - y - 1, x, heigth - y - 1);
                     break;
