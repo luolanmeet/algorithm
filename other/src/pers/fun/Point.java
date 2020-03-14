@@ -28,4 +28,9 @@ public class Point {
     public int getY() {
         return y;
     }
+
+    public static Point getMid(Point p1, Point p2) {
+        return new Point((p1.getX() + p2.getX()) / 2, (p1.getY() + p2.getY()) / 2);
+    }
+
 }
