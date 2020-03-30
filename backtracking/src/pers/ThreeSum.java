@@ -7,9 +7,13 @@ import java.util.*;
  * https://leetcode-cn.com/problems/3sum/
  */
 public class ThreeSum {
-    
-     // 回溯的解法，做剪枝也会超时
-     // 见array中的解法
+
+    /**
+     * 回溯的解法，做剪枝也会超时 o(n3)
+     * 见array中的解法
+     * @param nums
+     * @return
+     */
     public List<List<Integer>> threeSum(int[] nums) {
     
         Arrays.sort(nums);
@@ -56,7 +60,62 @@ public class ThreeSum {
             pre = stack.pop();
         }
     }
-    
+
+    /**
+     * 看题解，用排序 + 双指针的做法不会超时
+     * o(n2)
+     * @param nums
+     * @return
+     */
+    public List<List<Integer>> threeSum2(int[] nums) {
+
+        Arrays.sort(nums);
+
+        if (nums.length < 3) return Collections.emptyList();
+
+        List<List<Integer>> resp = new ArrayList<>();
+
+        for (int i = 0; i < nums.length; i++) {
+
+            // 最小的值不为0，则直接返回
+            if (nums[i] > 0) {
+                return resp;
+            }
+
+            // 去重
+            if (i > 0 && nums[i] == nums[i - 1]) {
+                continue;
+            }
+
+            // 双指针
+            int l = i + 1;
+            int r = nums.length - 1;
+
+            while (l < r) {
+
+                int sum = nums[i] + nums[l] + nums[r];
+                if (sum == 0) {
+                    resp.add(Arrays.asList(nums[i], nums[l], nums[r]));
+                    int tmp = r;
+                    while (tmp > l && nums[r] == nums[tmp]) tmp--;
+                    r = tmp;
+                    tmp = l;
+                    while (tmp < r && nums[l] == nums[tmp]) tmp++;
+                    l = tmp;
+                    continue;
+                }
+
+                if (sum > 0)
+                    r--;
+                else
+                    l++;
+            }
+
+        }
+        return resp;
+    }
+
+
     public static void main(String[] args) {
         ThreeSum obj = new ThreeSum();
         System.out.println(obj.threeSum(new int[]{-1, 0, 1, 2, -1, -4}));
