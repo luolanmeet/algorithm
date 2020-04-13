@@ -1,4 +1,4 @@
-package pers;
+package pers.design;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package pers;
+package pers.design;
 
 /**
  * 211. 添加与搜索单词 - 数据结构设计
