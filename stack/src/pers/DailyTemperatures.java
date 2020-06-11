@@ -23,6 +23,7 @@ public class DailyTemperatures {
             if (stack.isEmpty() || T[stack.peek()] >= T[i]) {
                 stack.push(i++);
             } else {
+                // 注意，这里没有修改到i的值，所以栈中的值仍会和T[i]进行比较
                 Integer index = stack.pop();
                 res[index] = i - index;
             }
