@@ -12,6 +12,7 @@ BuildTree2          | `LC中等题`[106. 从中序与后序遍历序列构造二
 PathSum             | `LC中等题`[113. 路径总和 II](https://leetcode-cn.com/problems/path-sum-ii/)
 Flatten             | `LC中等题`[114. 二叉树展开为链表](https://leetcode-cn.com/problems/flatten-binary-tree-to-linked-list/)
 ConnectBro          | `LC中等题`[116. 填充同一层的兄弟节点](https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node/)
+MaxPathSum          | `LC困难题`[124. 二叉树中的最大路径和](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum/)
 SumNumbers          | `LC中等题`[129. 求根到叶子节点数字之和](https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/)
 RightSideView       | `LC中等题`[199. 二叉树的右视图](https://leetcode-cn.com/problems/binary-tree-right-side-view/)
 CountNodes          | `LC中等题`[222. 完全二叉树的节点个数](https://leetcode-cn.com/problems/count-complete-tree-nodes/)
