@@ -2,6 +2,9 @@ package pers;
 
 /**
  * 70. 爬楼梯
+ *
+ * f(n) = { 1, n=1,2
+ *        { f(n-1)+f(n-2), n>2
  * https://leetcode-cn.com/problems/climbing-stairs/
  * @author cck
  */
