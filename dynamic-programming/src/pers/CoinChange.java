@@ -44,7 +44,7 @@ public class CoinChange {
      * dp(n) = { 无解, n<1
      *         { min{dp(n-coin)+1 | coin ∈ coins}, n>0}
      */
-    public int coinChangeViolence(int[] coins, int amount) { \\
+    public int coinChangeViolence(int[] coins, int amount) {
 
         if (amount == 0) return 0;
         if (amount < 0) return -1;
