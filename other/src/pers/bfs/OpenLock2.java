@@ -1,61 +1,65 @@
 package pers.bfs;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
- * 752. 打开转盘锁
- * https://leetcode-cn.com/problems/open-the-lock/
+ * 双向BFS
  * @author cck
- * @date 2021/1/5 23:06
+ * @date 2021/1/6 7:57
  */
-public class OpenLock {
+public class OpenLock2 {
 
     public int openLock(String[] deadends, String target) {
 
         Set<String> deadSet = new HashSet<>();
         Collections.addAll(deadSet, deadends);
 
-        Queue<String> q = new LinkedList<>();
         Set<String> visited = new HashSet<>();
-        q.offer("0000");
-        visited.add("0000");
+
+        Set<String> q1 = new HashSet<>();
+        q1.add("0000");
+        Set<String> q2 = new HashSet<>();
+        q2.add(target);
+
         int step = 0;
 
-        while (!q.isEmpty()) {
+        while (!q1.isEmpty() && !q2.isEmpty()) {
 
-            int sz = q.size();
+            Set<String> tmpSet = new HashSet<>();
 
-            for (int i = 0; i < sz; i++) {
+            for (String cur : q1) {
 
-                String cur = q.poll();
+                if (q2.contains(cur)) {
+                    return step;
+                }
                 if (deadSet.contains(cur)) {
                     continue;
                 }
-                if (target.equals(cur)) {
-                    return step;
-                }
+                visited.add(cur);
 
                 // 一共四位数，每一位都可以 +1 -1
-                for (int j = 0; j < 4; j++) {
-                    String tmp = plusOne(cur, j);
+                for (int i = 0; i < 4; i++) {
+                    String tmp = plusOne(cur, i);
                     if (!visited.contains(tmp)) {
-                        visited.add(tmp);
-                        q.offer(tmp);
+                        tmpSet.add(tmp);
                     }
-                    tmp = minusOne(cur, j);
+                    tmp = minusOne(cur, i);
                     if (!visited.contains(tmp)) {
-                        visited.add(tmp);
-                        q.offer(tmp);
+                        tmpSet.add(tmp);
                     }
                 }
+
+                step++;
+
+                // 转变扩散的方向
+                q1 = q2;
+                q2 = tmpSet;
             }
-
-            step++;
         }
-
         return -1;
     }
-
     private String plusOne(String cur, int i) {
         char[] cs = cur.toCharArray();
         if (cs[i] == '9') {
