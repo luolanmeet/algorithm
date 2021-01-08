@@ -1,4 +1,4 @@
-package pers.binarySearch;
+package pers.doublePoint.binarySearch;
 
 /**
  * 思考 < <=  +1  right = nums.length -1 这些细节

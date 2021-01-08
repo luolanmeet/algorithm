@@ -27,7 +27,13 @@ int binarySearch(int[] nums, int target) {
 如果 left = 0, right = nums.length-1;<br>
 那么搜索区间应该是[left, right]，搜索完整个区间即可退出，<br>
 因此while(left <= right)<br>
+而left和right应该是<br>
+left = mid + 1; right = mid - 1;<br>
+这样分割后区间依然是[left, right]
 
 如果 left = 0, right = nums.length;<br>
-那么搜索区间应该是[left, right)，因此while(left < right)退出 <br>
-
+那么搜索区间应该是[left, right)，<br>
+因此while(left < right)退出 <br>
+而left和right应该是<br>
+left = mid + 1; right = mid;<br>
+这样分割后区间依然是[left, right)
