@@ -17,6 +17,11 @@
 > * 找到状态和选择
 > * 明确dp数组/函数的定义
 > * 寻找"状态"之间的关系  
+
+> 明确dp数组所存数据的含义。根据dp数组的定义，运用数学归纳法的思想<br>
+> 假设dp[0..i-1]都已知，想办法求出dp[i]。如果没法完成这一步，可能是dp数组定义不恰当<br>
+> 或存储的信息还不够，需要把dp数组扩大成二维数组甚至三维数组
+
 ``` python
 # 初始化 base case
 dp[0][0][...] = base case
@@ -39,6 +44,7 @@ NthUglyNumber | `LC中等题`[264. 丑数 II](https://leetcode-cn.com/problems/u
 LengthOfLIS | `LC中等题`[300. 最长递增子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/)
 MaxProfit | `LC中等题`[309. 最佳买卖股票时机含冷冻期](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/submissions/)
 CoinChange | `LC中等题`[322. 零钱兑换](https://leetcode-cn.com/problems/coin-change/)
+MaxEnvelopes | `LC困难题`[354. 俄罗斯套娃信封问题](https://leetcode-cn.com/problems/russian-doll-envelopes/)
 CountNumbersWithUniqueDigits | `LC中等题`[357. 计算各个位数不同的数字个数](https://leetcode-cn.com/problems/count-numbers-with-unique-digits/)
 CanPartition | `LC中等题`[416. 分割等和子集](https://leetcode-cn.com/problems/partition-equal-subset-sum/)
 LongestPalindromeSubseq | `LC中等题`[516. 最长回文子序列](https://leetcode-cn.com/problems/longest-palindromic-subsequence/comments/)
