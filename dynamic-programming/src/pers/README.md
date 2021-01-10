@@ -44,7 +44,7 @@ NthUglyNumber | `LC中等题`[264. 丑数 II](https://leetcode-cn.com/problems/u
 LengthOfLIS | `LC中等题`[300. 最长递增子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/)
 MaxProfit | `LC中等题`[309. 最佳买卖股票时机含冷冻期](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/submissions/)
 CoinChange | `LC中等题`[322. 零钱兑换](https://leetcode-cn.com/problems/coin-change/)
-MaxEnvelopes | `LC困难题`[354. 俄罗斯套娃信封问题](https://leetcode-cn.com/problems/russian-doll-envelopes/)
+MaxEnvelopes | `LC困难题`[354. 俄罗斯套娃信封问题](https://leetcode-cn.com/problems/russian-doll-envelopes/) 
 CountNumbersWithUniqueDigits | `LC中等题`[357. 计算各个位数不同的数字个数](https://leetcode-cn.com/problems/count-numbers-with-unique-digits/)
 CanPartition | `LC中等题`[416. 分割等和子集](https://leetcode-cn.com/problems/partition-equal-subset-sum/)
 LongestPalindromeSubseq | `LC中等题`[516. 最长回文子序列](https://leetcode-cn.com/problems/longest-palindromic-subsequence/comments/)
@@ -61,3 +61,4 @@ MinFallingPathSum | `LC中等题`[931. 下降路径最小和](https://leetcode-c
 MincostTickets | `LC中等题`[983. 最低票价](https://leetcode-cn.com/problems/minimum-cost-for-tickets/submissions/)
 DivisorGame | `LC简单题`[1025. 除数博弈](https://leetcode-cn.com/problems/divisor-game/comments/)
 LastStoneWeightII | `LC中等题`[1049. 最后一块石头的重量 II](https://leetcode-cn.com/problems/last-stone-weight-ii/)
+LongestCommonSubsequence | `LC中等题`[1143. 最长公共子序列](https://leetcode-cn.com/problems/longest-common-subsequence/)
