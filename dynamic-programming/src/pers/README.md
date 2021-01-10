@@ -13,6 +13,10 @@
 * 这个问题有什么"状态"？
 * 对于每个"状态"，可以做出什么"选择"使得"状态"发生改变？
 * 如何定义`dp`数组/函数的含义来表现"状态"和"选择"？
+> 解题步骤 
+> * 找到状态和选择
+> * 明确dp数组/函数的定义
+> * 寻找"状态"之间的关系  
 ``` python
 # 初始化 base case
 dp[0][0][...] = base case
@@ -32,6 +36,7 @@ ZeroOneBag  | 01背包问题
 MaxSubArray | `LC简单题`[53. 最大子序和](https://leetcode-cn.com/problems/maximum-subarray/submissions/)
 ClimbStairs | `LC简单题`[70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)
 NthUglyNumber | `LC中等题`[264. 丑数 II](https://leetcode-cn.com/problems/ugly-number-ii/submissions/)
+LengthOfLIS | `LC中等题`[300. 最长递增子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/)
 MaxProfit | `LC中等题`[309. 最佳买卖股票时机含冷冻期](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/submissions/)
 CoinChange | `LC中等题`[322. 零钱兑换](https://leetcode-cn.com/problems/coin-change/)
 CountNumbersWithUniqueDigits | `LC中等题`[357. 计算各个位数不同的数字个数](https://leetcode-cn.com/problems/count-numbers-with-unique-digits/)
