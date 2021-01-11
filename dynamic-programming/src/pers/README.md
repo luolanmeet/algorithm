@@ -40,6 +40,7 @@ for 状态1 in 状态1 的所有取值：
 ZeroOneBag  | 01背包问题
 MaxSubArray | `LC简单题`[53. 最大子序和](https://leetcode-cn.com/problems/maximum-subarray/submissions/)
 ClimbStairs | `LC简单题`[70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)
+MinDistance | `LC困难题`[72. 编辑距离](https://leetcode-cn.com/problems/edit-distance/)
 NthUglyNumber | `LC中等题`[264. 丑数 II](https://leetcode-cn.com/problems/ugly-number-ii/submissions/)
 LengthOfLIS | `LC中等题`[300. 最长递增子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/)
 MaxProfit | `LC中等题`[309. 最佳买卖股票时机含冷冻期](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/submissions/)
