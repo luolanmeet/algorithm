@@ -17,7 +17,8 @@ public class IsMatch {
         
         // p 是以 ?* 开始的
         if (p.length() >= 2 && p.charAt(1) == '*') {
-            // 0个? 和 >0个? 的情况
+            // 处理 s中有 0个?  和 类似  s=aa p=a*aa 的情况
+            // 处理 s中有 多于0个? 的情况
             return isMatch(s, p.substring(2)) || (firstMatch && isMatch(s.substring(1), p));
         } else {
             // 不以 ?* 开始的情况

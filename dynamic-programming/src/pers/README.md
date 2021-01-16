@@ -6,7 +6,7 @@
 * 重叠子问题（备忘录(自顶向下)/db数组(自底向上)优化穷举，消除重叠子问题。例子为斐波那契数列）
     * 备忘录/db数组的优化（状态压缩）
 * 最优子结构（通过子问题的最值 可以 得到原问题的最值）
-
+> dp正常都是 O(mn)的复杂度，因为都是两层for循环
 
 编写状态转移方程前的思考
 * 问题的`base case`（最简单情况）是什么？
@@ -38,6 +38,7 @@ for 状态1 in 状态1 的所有取值：
 类名|内容
 ---|---
 ZeroOneBag  | 01背包问题
+IsMatch | `LC困难题`[10. 正则表达式匹配](https://leetcode-cn.com/problems/regular-expression-matching/)
 MaxSubArray | `LC简单题`[53. 最大子序和](https://leetcode-cn.com/problems/maximum-subarray/submissions/)
 ClimbStairs | `LC简单题`[70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)
 MinDistance | `LC困难题`[72. 编辑距离](https://leetcode-cn.com/problems/edit-distance/)
