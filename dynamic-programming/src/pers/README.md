@@ -58,6 +58,7 @@ FindLength | `LC中等题`[718. 最长重复子数组](https://leetcode-cn.com/p
 DeleteAndEarn | `LC中等题`[740. 删除与获得点数](https://leetcode-cn.com/problems/delete-and-earn/)
 LenLongestFibSubseq | `LC中等题`[873. 最长的斐波那契子序列的长度](https://leetcode-cn.com/problems/length-of-longest-fibonacci-subsequence/comments/)
 StoneGame | `LC中等题`[877. 石子游戏](https://leetcode-cn.com/problems/stone-game/)
+SuperEggDrop | `LC困难题`[887. 鸡蛋掉落](https://leetcode-cn.com/problems/super-egg-drop/)
 SubarrayBitwiseORs | `LC中等题`[898. 子数组按位或操作](https://leetcode-cn.com/problems/bitwise-ors-of-subarrays/)
 MinFallingPathSum | `LC中等题`[931. 下降路径最小和](https://leetcode-cn.com/problems/minimum-falling-path-sum/comments/)
 MincostTickets | `LC中等题`[983. 最低票价](https://leetcode-cn.com/problems/minimum-cost-for-tickets/submissions/)
