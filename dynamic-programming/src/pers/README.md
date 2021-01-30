@@ -45,6 +45,7 @@ MinDistance | `LC困难题`[72. 编辑距离](https://leetcode-cn.com/problems/e
 NthUglyNumber | `LC中等题`[264. 丑数 II](https://leetcode-cn.com/problems/ugly-number-ii/submissions/)
 LengthOfLIS | `LC中等题`[300. 最长递增子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/)
 MaxProfit | `LC中等题`[309. 最佳买卖股票时机含冷冻期](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/submissions/)
+MaxCoins | `LC困难题`[312. 戳气球](https://leetcode-cn.com/problems/burst-balloons/)
 CoinChange | `LC中等题`[322. 零钱兑换](https://leetcode-cn.com/problems/coin-change/)
 MaxEnvelopes | `LC困难题`[354. 俄罗斯套娃信封问题](https://leetcode-cn.com/problems/russian-doll-envelopes/) 
 CountNumbersWithUniqueDigits | `LC中等题`[357. 计算各个位数不同的数字个数](https://leetcode-cn.com/problems/count-numbers-with-unique-digits/)
