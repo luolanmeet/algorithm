@@ -42,6 +42,7 @@ IsMatch | `LC困难题`[10. 正则表达式匹配](https://leetcode-cn.com/probl
 MaxSubArray | `LC简单题`[53. 最大子序和](https://leetcode-cn.com/problems/maximum-subarray/submissions/)
 ClimbStairs | `LC简单题`[70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)
 MinDistance | `LC困难题`[72. 编辑距离](https://leetcode-cn.com/problems/edit-distance/)
+NumDecodings | `LC中等题`[91. 解码方法](https://leetcode-cn.com/problems/decode-ways/)
 MaxProduct | `LC中等题`[152. 乘积最大子数组](https://leetcode-cn.com/problems/maximum-product-subarray/)
 NthUglyNumber | `LC中等题`[264. 丑数 II](https://leetcode-cn.com/problems/ugly-number-ii/submissions/)
 LengthOfLIS | `LC中等题`[300. 最长递增子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/)
