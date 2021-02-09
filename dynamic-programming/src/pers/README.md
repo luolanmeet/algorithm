@@ -47,6 +47,7 @@ MaxProduct | `LC中等题`[152. 乘积最大子数组](https://leetcode-cn.com/p
 Rob | `LC中等题`[198. 打家劫舍](https://leetcode-cn.com/problems/house-robber/)
 NthUglyNumber | `LC中等题`[264. 丑数 II](https://leetcode-cn.com/problems/ugly-number-ii/submissions/)
 LengthOfLIS | `LC中等题`[300. 最长递增子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/)
+NumMatrix | `LC中等题`[304. 二维区域和检索 - 矩阵不可变](https://leetcode-cn.com/problems/range-sum-query-2d-immutable/)
 MaxProfit | `LC中等题`[309. 最佳买卖股票时机含冷冻期](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/submissions/)
 MaxCoins | `LC困难题`[312. 戳气球](https://leetcode-cn.com/problems/burst-balloons/)
 CoinChange | `LC中等题`[322. 零钱兑换](https://leetcode-cn.com/problems/coin-change/)
