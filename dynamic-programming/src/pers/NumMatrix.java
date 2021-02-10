@@ -43,18 +43,14 @@ public class NumMatrix {
 
         int result = dp[row2][col2];
 
-        if (col1 > 0 && row1 > 0) {
-            result -= dp[row2][col1 - 1];
-            result -= dp[row1 - 1][col2];
-            result += dp[row1 - 1][col1 - 1];
-            return result;
-        }
-
         if (col1 > 0) {
             result -= dp[row2][col1 - 1];
         }
         if (row1 > 0) {
             result -= dp[row1 - 1][col2];
+        }
+        if (col1 > 0 && row1 > 0) {
+            result += dp[row1 - 1][col1 - 1];
         }
 
         return result;
