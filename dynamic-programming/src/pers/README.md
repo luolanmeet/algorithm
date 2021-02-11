@@ -54,6 +54,7 @@ CoinChange | `LC中等题`[322. 零钱兑换](https://leetcode-cn.com/problems/c
 MaxEnvelopes | `LC困难题`[354. 俄罗斯套娃信封问题](https://leetcode-cn.com/problems/russian-doll-envelopes/) 
 CountNumbersWithUniqueDigits | `LC中等题`[357. 计算各个位数不同的数字个数](https://leetcode-cn.com/problems/count-numbers-with-unique-digits/)
 CanPartition | `LC中等题`[416. 分割等和子集](https://leetcode-cn.com/problems/partition-equal-subset-sum/)
+FindTargetSumWays | `LC中等题`[494. 目标和](https://leetcode-cn.com/problems/target-sum/)
 LongestPalindromeSubseq | `LC中等题`[516. 最长回文子序列](https://leetcode-cn.com/problems/longest-palindromic-subsequence/comments/)
 Change | `LC中等题`[518. 零钱兑换 II](https://leetcode-cn.com/problems/coin-change-2/)
 ShoppingOffers | `LC中等题`[638. 大礼包](https://leetcode-cn.com/problems/shopping-offers/comments/)
