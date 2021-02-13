@@ -3,10 +3,10 @@
 项目名|内容
 ---|---
 🍥 [backtracking] |  回溯算法
-🏝 [binary-tree] |  二叉树
-🐌 [dynamic-programming]  |  动态规划
-🗺 [graph]  |  图
 🐍 [greedy]  |  贪心算法
+🐌 [dynamic-programming]  |  动态规划
+🏝 [tree] |  树
+🗺 [graph]  |  图
 📚 [array]  |  数组
 🎰 [hash-table]  |  哈希表
 🔗 [linked-list]  |  链表
@@ -14,7 +14,7 @@
 ❄️ [other] | 一些算法和数据结构 
 
 [backtracking]: https://github.com/luolanmeet/algorithm/tree/master/backtracking/src/pers
-[binary-tree]: https://github.com/luolanmeet/algorithm/tree/master/binary-tree/src/pers
+[tree]: https://github.com/luolanmeet/algorithm/tree/master/tree/src/pers
 [dynamic-programming]: https://github.com/luolanmeet/algorithm/tree/master/dynamic-programming/src/pers
 [graph]: https://github.com/luolanmeet/algorithm/tree/master/graph/src/pers
 [greedy]: https://github.com/luolanmeet/algorithm/tree/master/greedy/src/pers
