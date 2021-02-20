@@ -1,6 +1,19 @@
-# 二叉树的算法  
+# 树的算法
+
+### 树的一些公式
+#### 叶子节点数
+满k叉树节点数 = (k^树高度 - 1) / (k - 1)
+
+> 回溯算法的时间复杂度通常就是树的节点数，(通常这棵树是满二叉树)
+>
+> 数的高度就是题目的选项的个数，即用于做 选择/撤销选择 的选项的个数
+> 
+> 即 ： O(n) = 2^n
+> 
+> > 满k叉树，注意不要和全排列弄混了，全排列是一棵决策树，不是满k叉树
+
 > LC --> leetcode上的题
-· 
+
 类名|内容
 ---|---
 BinaryTreeTraversal |  前序、中序、后序、层次遍历
@@ -19,6 +32,7 @@ CountNodes          | `LC中等题`[222. 完全二叉树的节点个数](https:/
 KthSmallest         | `LC中等题`[230. 二叉搜索树中第K小的元素](https://leetcode-cn.com/problems/kth-smallest-element-in-a-bst/submissions/)
 CommonAncestor      | `LC中等题`[236. 二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)
 IsValidSerialization| `LC中等题`[331. 验证二叉树的前序序列化](https://leetcode-cn.com/problems/verify-preorder-serialization-of-a-binary-tree/)
+Rob3| `LC中等题`[337. 打家劫舍 III](https://leetcode-cn.com/problems/house-robber-iii/)
 FrequentTreeSum     | `LC中等题`[508. 出现次数最多的子树元素和](https://leetcode-cn.com/problems/most-frequent-subtree-sum/)
 BottomLeftValue     | `LC中等题`[513. 找树左下角的值](https://leetcode-cn.com/problems/find-bottom-left-tree-value/)
 LargestValues       | `LC中等题`[515. 在每个树行中找最大值](https://leetcode-cn.com/problems/find-largest-value-in-each-tree-row/)

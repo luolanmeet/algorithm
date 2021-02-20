@@ -42,6 +42,7 @@ Exist | `LC中等题`[79. 单词搜索](https://leetcode-cn.com/problems/word-se
 SubsetsWithDup | `LC中等题`[90. 子集 II](https://leetcode-cn.com/problems/subsets-ii/)
 Partition | `LC中等题`[131. 分割回文串](https://leetcode-cn.com/problems/palindrome-partitioning/)
 IsAdditiveNumber | `LC中等题`[306. 累加数](https://leetcode-cn.com/problems/additive-number/)
+FindTargetSumWays | `LC中等题`[494. 目标和](https://leetcode-cn.com/problems/target-sum/)
 CountArrangement | `LC中等题`[526. 优美的排列](https://leetcode-cn.com/problems/beautiful-arrangement/)
 CanPartitionKSubsets | `LC中等题`[698. 划分为k个相等的子集](https://leetcode-cn.com/problems/partition-to-k-equal-sum-subsets/comments/)
 SplitIntoFibonacci | `LC中等题`[842. 将数组拆分成斐波那契序列](https://leetcode-cn.com/problems/split-array-into-fibonacci-sequence/)

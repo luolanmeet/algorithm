@@ -14,7 +14,7 @@ import java.util.Map;
  *
  * 进阶:
  *
- * 你是否可以在 O(1) 时间复杂度内完成这两种操作？
+ * 你是否可以在O(1) 时间复杂度内完成这两种操作？
  *
  * 示例:
  *      LRUCache cache = new LRUCache(2) // 缓存容量
@@ -27,6 +27,11 @@ import java.util.Map;
  *      cache.get(1);       // 返回 -1 (未找到)
  *      cache.get(3);       // 返回  3
  *      cache.get(4);       // 返回  4
+ *
+ * LRU 的几个需求
+ * 1. 快速定位数组  --> 哈希表
+ * 2. 快速维护数据(新增、删除)  --> 链表
+ * 3. 数据有序  --> 数组或链表
  *
  * 146. LRU缓存机制
  * https://leetcode-cn.com/problems/lru-cache/submissions/
@@ -84,7 +89,7 @@ class LRUCache {
         cache.put(4,4);     // 该操作会使得密钥 1 作废
         System.out.println(cache.get(1));       // 返回 -1 (未找到)
         System.out.println(cache.get(3));       // 返回  3
-        System.out.println(cache.get(4));       // 返回  4
+        System.out.println(cache.get(4))s;       // 返回  4
         
     }
     

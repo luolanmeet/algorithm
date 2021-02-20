@@ -15,6 +15,15 @@
 * 对于每个"状态"，可以做出什么"选择"使得"状态"发生改变？
 * 如何定义`dp`数组/函数的含义来表现"状态"和"选择"？
     * dp数组的索引要能反映出状态（多个状态就是多个维度），而值一般是子问题的解
+
+> 更直观的理解 选择 与 状态
+> 
+> 子问题 + 新的状态选项 = 大问题
+> 
+> 子问题的解(base case 已知) + 新的状态选项的处理(未知，根据题意做最优处理) = 大问题的解(未知)
+> 
+> 动态规划实际上的效果是：让原问题的规模变小，再用小问题的解和对新的选项的处理去组成大问题的解，从而得到最终答案。
+
 > 解题步骤 
 > * 找到状态和选择
 > * 明确dp数组/函数的定义
@@ -44,13 +53,19 @@ IsMatch | `LC困难题`[10. 正则表达式匹配](https://leetcode-cn.com/probl
 MaxSubArray | `LC简单题`[53. 最大子序和](https://leetcode-cn.com/problems/maximum-subarray/submissions/)
 ClimbStairs | `LC简单题`[70. 爬楼梯](https://leetcode-cn.com/problems/climbing-stairs/)
 MinDistance | `LC困难题`[72. 编辑距离](https://leetcode-cn.com/problems/edit-distance/)
+NumDecodings | `LC中等题`[91. 解码方法](https://leetcode-cn.com/problems/decode-ways/)
+MaxProduct | `LC中等题`[152. 乘积最大子数组](https://leetcode-cn.com/problems/maximum-product-subarray/)
+Rob | `LC中等题`[198. 打家劫舍](https://leetcode-cn.com/problems/house-robber/)
 NthUglyNumber | `LC中等题`[264. 丑数 II](https://leetcode-cn.com/problems/ugly-number-ii/submissions/)
 LengthOfLIS | `LC中等题`[300. 最长递增子序列](https://leetcode-cn.com/problems/longest-increasing-subsequence/)
+NumMatrix | `LC中等题`[304. 二维区域和检索 - 矩阵不可变](https://leetcode-cn.com/problems/range-sum-query-2d-immutable/)
 MaxProfit | `LC中等题`[309. 最佳买卖股票时机含冷冻期](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/submissions/)
+MaxCoins | `LC困难题`[312. 戳气球](https://leetcode-cn.com/problems/burst-balloons/)
 CoinChange | `LC中等题`[322. 零钱兑换](https://leetcode-cn.com/problems/coin-change/)
 MaxEnvelopes | `LC困难题`[354. 俄罗斯套娃信封问题](https://leetcode-cn.com/problems/russian-doll-envelopes/) 
 CountNumbersWithUniqueDigits | `LC中等题`[357. 计算各个位数不同的数字个数](https://leetcode-cn.com/problems/count-numbers-with-unique-digits/)
 CanPartition | `LC中等题`[416. 分割等和子集](https://leetcode-cn.com/problems/partition-equal-subset-sum/)
+FindTargetSumWays | `LC中等题`[494. 目标和](https://leetcode-cn.com/problems/target-sum/)
 LongestPalindromeSubseq | `LC中等题`[516. 最长回文子序列](https://leetcode-cn.com/problems/longest-palindromic-subsequence/comments/)
 Change | `LC中等题`[518. 零钱兑换 II](https://leetcode-cn.com/problems/coin-change-2/)
 ShoppingOffers | `LC中等题`[638. 大礼包](https://leetcode-cn.com/problems/shopping-offers/comments/)
