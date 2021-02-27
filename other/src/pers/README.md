@@ -4,6 +4,7 @@
 ---|---|---
 |**[bfs](https://github.com/luolanmeet/algorithm/other/bfs)** |  | 
 |**[bfs](https://github.com/luolanmeet/algorithm/other/bfs)** |  |
+|**[双指针](https://github.com/luolanmeet/algorithm/other/doublePoint)** |  |
 |**[常见排序](https://github.com/luolanmeet/algorithm/tree/master/other/src/pers/sort)** |  |
 |**[有趣的算法](https://github.com/luolanmeet/algorithm/tree/master/other/src/pers/fun)** |  |
 |**牛顿迭代法** | MySqrt | [69. x 的平方根](https://leetcode-cn.com/problems/sqrtx/)
