@@ -5,6 +5,7 @@
 ---|---
 LargestRectangleArea  | `LC困难题`[84. 柱状图中最大的矩形](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/)
 EvalRPN               | `LC中等题`[150. 逆波兰表达式求值](https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/)
+Calculate2            | `LC中等题`[227. 基本计算器 II](https://leetcode-cn.com/problems/basic-calculator-ii/)
 DecodeString          | `LC中等题`[394. 字符串解码](https://leetcode-cn.com/problems/decode-string/)
 RemoveKdigits         | `LC中等题`[402. 移掉K位数字](https://leetcode-cn.com/problems/remove-k-digits/submissions/)
 NextGreaterElement    | `LC简单题`[496. 下一个更大元素 I](https://leetcode-cn.com/problems/next-greater-element-i/)
