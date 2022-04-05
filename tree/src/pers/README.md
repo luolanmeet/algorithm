@@ -19,6 +19,7 @@
 BinaryTreeTraversal |  前序、中序、后序、层次遍历
 BinaryTreeDepth     |  求二叉树深度
 BinaryTreeCopy      |  克隆二叉树
+RecoverTree         | `LC中等题`[99. 恢复二叉搜索树](https://leetcode-cn.com/problems/recover-binary-search-tree/)
 IsSymmetric         | `LC简单题`[101. 对称二叉树](https://leetcode-cn.com/problems/symmetric-tree/)
 BuildTree1          | `LC中等题`[105. 从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
 BuildTree2          | `LC中等题`[106. 从中序与后序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)
