@@ -24,9 +24,9 @@ public class MaxEnvelopes {
 
         Arrays.sort(envelopes, (a, b) -> {
             if (a[0] == b[0]) {
-                return b[1] - a[1];
+                return b[1] - a[1]; // 宽度相同时，按高度降序排列，保证同个宽度下只有一个信封被使用
             }
-            return a[0] - b[0];
+            return a[0] - b[0]; // 按宽度升序排列，把问题降成一维
         });
 
         int[] dp = new int[envelopes.length];
