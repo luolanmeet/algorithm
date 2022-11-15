@@ -31,3 +31,4 @@ BrokenCalc       | `LC中等题`[991. 坏了的计算器](https://leetcode-cn.co
 LargestSumAfterKNegations | `LC简单题`[1005. K 次取反后最大化的数组和](https://leetcode-cn.com/problems/maximize-sum-of-array-after-k-negations/)
 TwoCitySchedCost | `LC简单题`[1029. 两地调度](https://leetcode-cn.com/problems/two-city-scheduling/)
 MaxSatisfied | `LC中等题`[1052. 爱生气的书店老板](https://leetcode-cn.com/problems/grumpy-bookstore-owner/)
+MaximumUnits | `LC简单题`[1710. 卡车上的最大单元数](https://leetcode.cn/problems/maximum-units-on-a-truck/)
