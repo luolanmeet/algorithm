@@ -79,6 +79,7 @@ CountSubstrings | `LC中等题`[647. 回文子串](https://leetcode-cn.com/probl
 MinSteps | `LC中等题`[650. 只有两个键的键盘](https://leetcode-cn.com/problems/2-keys-keyboard/submissions/)
 FindLength | `LC中等题`[718. 最长重复子数组](https://leetcode-cn.com/problems/maximum-length-of-repeated-subarray/comments/)
 DeleteAndEarn | `LC中等题`[740. 删除与获得点数](https://leetcode-cn.com/problems/delete-and-earn/)
+NumTilings | `LC中等题`[790. 多米诺和托米诺平铺](https://leetcode.cn/problems/domino-and-tromino-tiling/)
 LenLongestFibSubseq | `LC中等题`[873. 最长的斐波那契子序列的长度](https://leetcode-cn.com/problems/length-of-longest-fibonacci-subsequence/comments/)
 StoneGame | `LC中等题`[877. 石子游戏](https://leetcode-cn.com/problems/stone-game/)
 SuperEggDrop | `LC困难题`[887. 鸡蛋掉落](https://leetcode-cn.com/problems/super-egg-drop/)
