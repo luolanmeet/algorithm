@@ -22,3 +22,5 @@ Flatten             | `LC中等题`[430. 扁平化多级双向链表](https://le
 AddTwoNumbers2      | `LC中等题`[445. 两数相加 II](https://leetcode-cn.com/problems/add-two-numbers-ii/)
 SplitListToParts    | `LC中等题`[725. 分隔链表](https://leetcode-cn.com/problems/split-linked-list-in-parts/)
 NextLargerNodes     | `LC中等题`[1019. 链表中的下一个更大节点](https://leetcode-cn.com/problems/next-greater-node-in-linked-list/)
+DeleteMiddle        | `LC中等题`[2095. 删除链表的中间节点](https://leetcode.cn/problems/delete-the-middle-node-of-a-linked-list/)
+PairSum             | `LC中等题`[2130. 链表最大孪生和](https://leetcode.cn/problems/maximum-twin-sum-of-a-linked-list/)
