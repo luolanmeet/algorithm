@@ -51,4 +51,5 @@ CompleteTree        | `LC中等题`[958. 二叉树的完全性检验](https://le
 UnivalTree          | `LC简单题`[965. 单值二叉树](https://leetcode-cn.com/problems/univalued-binary-tree/)
 DistributeCoins     | `LC中等题`[979. 在二叉树中分配硬币](https://leetcode-cn.com/problems/distribute-coins-in-binary-tree/)
 VerticalTraversal   | `LC中等题`[987. 二叉树的垂序遍历](https://leetcode-cn.com/problems/vertical-order-traversal-of-a-binary-tree/)
+LongestZigZag       | `LC中等题`[1372. 二叉树中的最长交错路径](https://leetcode.cn/problems/longest-zigzag-path-in-a-binary-tree/)
 GoodNodes           | `LC中等题`[1448. 统计二叉树中好节点的数目](https://leetcode.cn/problems/count-good-nodes-in-binary-tree/)
