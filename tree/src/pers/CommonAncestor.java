@@ -19,7 +19,8 @@ public class CommonAncestor {
         
         TreeNode left = lowestCommonAncestor(root.left, p, q);
         TreeNode right = lowestCommonAncestor(root.right, p, q);
-        
+
+        // q 和 p 分布在 root.left 和 root.right 中
         if (left != null && right != null) {
             return root;
         }

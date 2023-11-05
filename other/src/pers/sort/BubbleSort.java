@@ -12,8 +12,9 @@ public class BubbleSort {
 
     public static void sort(int[] array) {
         
-        // 把最大的往后调
+        // 把最大的往后调，并且后续不用再比较这个数
         for (int len = array.length; len > 0; len--) {
+            // 内存循环，每次都把最大的数移动到最后
             for (int i = 0; i < len - 1; i++) {
                 if (array[i] > array[i + 1]) {
                     int tmp = array[i];
