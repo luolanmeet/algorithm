@@ -1,6 +1,8 @@
 package pers;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * 56. 合并区间
@@ -8,7 +10,33 @@ import java.util.Arrays;
  * 使用辅助空间，会变得简单很多
  */
 public class Merge {
-    
+
+    public int[][] merge2(int[][] intervals) {
+
+        if (intervals.length == 1) {
+            return intervals;
+        }
+
+        // 排序
+        Arrays.sort(intervals, (a, b) -> a[0] == b[0] ? a[1] - b[1] : a[0] - b[0]);
+
+        List<int[]> result = new ArrayList<>();
+        for (int i = 0; i < intervals.length; i++) {
+
+            int size = result.size();
+
+            // 第一个区间 或 新的区间的左区间大于已存在的最大右区间，则直接加入结果中
+            if (size == 0 || result.get(size - 1)[1] < intervals[i][0]) {
+                result.add(new int[]{intervals[i][0], intervals[i][1]});
+            } else {
+                // 区间出现重叠，取最大的区间值。
+                result.get(size-1)[1] = Math.max(result.get(size-1)[1], intervals[i][1]);
+            }
+        }
+
+        return result.toArray(new int[result.size()][]);
+    }
+
     public int[][] merge(int[][] intervals) {
     
         if (intervals.length <= 1) {
@@ -44,7 +72,7 @@ public class Merge {
     public static void main(String[] args) {
     
         Merge obj = new Merge();
-        int[][] merge = obj.merge(new int[][]{
+        int[][] merge = obj.merge2(new int[][]{
                 {1, 3},
                 {2, 6},
                 {2, 6},
@@ -52,7 +80,7 @@ public class Merge {
                 {8, 10},
         });
         sout(merge);
-        merge = obj.merge(new int[][]{
+        merge = obj.merge2(new int[][]{
                 {1, 4},
                 {2, 3},
         });
