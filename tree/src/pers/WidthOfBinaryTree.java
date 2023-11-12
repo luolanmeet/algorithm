@@ -13,6 +13,7 @@ public class WidthOfBinaryTree {
     int maxW = 0;
     
     // 利用了满二叉树的特性（尽管这里的树不一定是满二叉树）
+    // 为每个节点设置编号 index
     public int widthOfBinaryTree(TreeNode root) {
         
         dfs(root, 1, 1, new ArrayList<Integer>());
@@ -26,7 +27,7 @@ public class WidthOfBinaryTree {
             return ;
         }
         
-        // 还没有这一层最左边的节点的序列
+        // 保存每一层最左边的节点的序号
         if (level > left.size()) {
             left.add(index);
         }
