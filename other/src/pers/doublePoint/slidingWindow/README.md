@@ -29,7 +29,7 @@ void slidingWindow(string s, string t) {
     while (right < s.size()) {
         // c是将移入窗口的字符
         char c = s[right];
-        // 右移窗口
+        // 右移窗口（通常每次都要移动右窗口）
         right++;
         
         // 进行窗口内数据的一系列更新
