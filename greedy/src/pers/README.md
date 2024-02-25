@@ -10,6 +10,7 @@
 CanJump          | `LC中等题`[55. 跳跃游戏](https://leetcode-cn.com/problems/jump-game/comments/)
 MaxProfit        | `LC简单题`[122. 买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/)
 CanCompleteCircuit        | `LC中等题`[134. 加油站](https://leetcode-cn.com/problems/gas-station/)
+LargestNumber        | `LC中等题`[179. 最大数](https://leetcode.cn/problems/largest-number/)
 IncreasingTriplet        | `LC中等题`[334. 递增的三元子序列](https://leetcode.cn/problems/increasing-triplet-subsequence/)
 ReconstructQueue | `LC中等题`[406. 根据身高重建队列](https://leetcode-cn.com/problems/queue-reconstruction-by-height/submissions/)
 FindPoisonedDuration | `LC中等题`[495. 提莫攻击](https://leetcode-cn.com/problems/teemo-attacking/comments/)
