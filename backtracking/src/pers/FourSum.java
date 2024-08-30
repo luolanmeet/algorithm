@@ -3,6 +3,7 @@ package pers;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Stack;
 
 /**
  * 18. 四数之和
@@ -63,6 +64,46 @@ public class FourSum {
         }
 
         return resp;
+    }
+
+    /**
+     * 回溯的方式，超时了
+     */
+    List<List<Integer>> res = new ArrayList<>();
+    public List<List<Integer>> fourSum2(int[] nums, int target) {
+        Arrays.sort(nums);
+        backTrack(nums, target, 0, 0, new Stack<Integer>());
+        return res;
+    }
+    public void backTrack(int[] nums, int target, int sum, int idx, Stack<Integer> stack) {
+
+        if (sum == target && stack.size() == 4) {
+            res.add(new ArrayList<>(stack));
+            return ;
+        }
+        if (idx >= nums.length || stack.size() >= 4) {
+            return ;
+        }
+        int time = 0;
+        for (int i = idx; i < nums.length; i++) {
+            if (nums[i] == nums[idx]) {
+                time++;
+            } else {
+                break;
+            }
+        }
+
+        int tmpSum = sum;
+        for (int i = 0; i < 4 && i < time; i++) {
+            tmpSum += nums[idx];
+            stack.push(nums[idx]);
+            backTrack(nums, target, tmpSum, idx + time, stack);
+        }
+        for (int i = 0; i < 4 && i < time; i++) {
+            stack.pop();
+        }
+
+        backTrack(nums, target, sum, idx + time, stack);
     }
 
     public static void main(String[] args) {

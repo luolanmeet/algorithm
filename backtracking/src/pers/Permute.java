@@ -25,12 +25,13 @@ public class Permute {
                            List<List<Integer>> res,
                            boolean[] used,
                            int[] nums) {
-        
         if (stack.size() == nums.length) {
             res.add(new ArrayList<>(stack));
             return ;
         }
 
+        // 写回溯 容易陷入 "要和不要" 这种思维惯性
+        // 这里压根不管，能用就用。因为每次这里都是从 0 开始遍历，不存在上次回溯的状态。
         for (int i = 0; i < nums.length; i++) {
         
             if (used[i]) {

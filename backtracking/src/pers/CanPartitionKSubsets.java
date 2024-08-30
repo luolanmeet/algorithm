@@ -11,44 +11,47 @@ public class CanPartitionKSubsets {
     
     public boolean canPartitionKSubsets(int[] nums, int k) {
         
-        int temp = 0;
+        int sum = 0;
         for (int num : nums) {
-            temp += num;
+            sum += num;
         }
-        if (temp % k != 0) {
+        if (sum % k != 0) {
             return false;
         }
-        temp /= k;
-        int[] data = new int[k];
+        int avg = sum / k;
         Arrays.sort(nums);
-        if(nums[nums.length - 1] > temp){
+        if (nums[nums.length - 1] > avg) {
             return false;
         }
-        for (int i = 0; i < k; i++) {
-            data[i] = temp;
-        }
-        
-        return method(nums, nums.length - 1, data, k);
+
+        // 一共分成 k 份
+        int[] data = new int[k];
+        Arrays.fill(data, avg);
+
+        return method(nums, nums.length - 1, data);
     }
 
-    private boolean method(int[] nums, int i, int[] data, int k) {
+    private boolean method(int[] nums, int idx, int[] data) {
         
-        if (i < 0) {
+        if (idx < 0) {
             for (int a : data) {
                 if (a != 0) {
                     return false;
                 }
             }
-            return true;            
+            return true;
         }
         
-        for (int j = 0; j < k; j++) {
-            if (data[j] >= nums[i]) {
-                data[j] -= nums[i];
-                if (method(nums, i-1, data, k)) {
+        for (int i = 0; i < data.length; i++) {
+            if (data[i] >= nums[idx]) {
+                // 将 nums[idx] 放在第 i 份中
+                data[i] -= nums[idx];
+                // 存在能分配成功的情况，直接返回。
+                if (method(nums, idx - 1, data)) {
                     return true;
                 }
-                data[j] += nums[i];
+                // 回溯
+                data[i] += nums[idx];
             }
         }
         

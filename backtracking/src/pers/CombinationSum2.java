@@ -7,6 +7,7 @@ import java.util.Stack;
 
 /**
  * 40. 组合总和 II
+ * 同 FourSum 18.四数之和
  * https://leetcode-cn.com/problems/combination-sum-ii/
  */
 public class CombinationSum2 {
@@ -35,6 +36,7 @@ public class CombinationSum2 {
         }
 
         // 这里是要 candidates[index] 这个数，和这个数相关的组合都在这次调用中产生
+        // 每次进入 backtrack 都会使用当前数字
         stack.push(candidates[index]);
         backtrack(res, candidates, stack, index + 1, sum + candidates[index], target);
         stack.pop();
@@ -56,6 +58,49 @@ public class CombinationSum2 {
             backtrack(res, candidates, stack, i, sum, target);
             break;
         }
+    }
+
+    /**
+     * 先去重 容易理解一些
+     */
+    public void backTrack2(List<List<Integer>> res, int[] candidates, Stack<Integer> cur, int idx, int sum, int target) {
+
+        if (sum == target) {
+            res.add(new ArrayList<>(cur));
+            return ;
+        }
+        if (idx >= candidates.length || sum + candidates[idx] > target) {
+            return ;
+        }
+
+        // 去重的思路：
+        // 用有重复的数字能构成的组合无非就是： 1个重复的数 2个重复的数 .. n个重复的数
+        // 统计当前数字一共有多少个重复的，并在当前循环把所有情况都列出，
+        // 回溯时，idx 跳过 n 个数即可
+
+        // 统计当前数字一共有多少个重复的
+        int time = 0;
+        for (int i = idx; i < candidates.length; i++) {
+            if (candidates[i] == candidates[idx]) {
+                time++;
+            }
+        }
+        // 用 candidates[idx] 这个数的所有情况，注意这里 idx 跳过的 time 次，调用 backTrack2 时已经是不同的数字了
+        // 1个重复的数 2个重复的数 .. n个重复的数
+        int tmpSum = 0;
+        for (int i = 0; i < time; i++) {
+            cur.push(candidates[idx]);
+            tmpSum += candidates[idx];
+            backTrack2(res, candidates, cur, idx + time, sum + tmpSum, target);
+        }
+        // 恢复成不使用 candidates[idx] 的状态
+        for (int i = 0; i < time; i++) {
+            cur.pop();
+        }
+
+        // 不使用 candidates[idx] 的情况
+        // 0个重复的数
+        backTrack2(res, candidates, cur, idx + time, sum, target);
     }
     
     public static void main(String[] args) {

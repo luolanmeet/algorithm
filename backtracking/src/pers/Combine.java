@@ -6,7 +6,7 @@ import java.util.Stack;
 
 /**
  * 77. 组合
- * https://leetcode-cn.com/problems/combinations/submissions/
+ * https://leetcode.cn/problems/combinations/description/
  */
 public class Combine {
 

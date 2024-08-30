@@ -7,6 +7,7 @@ import java.util.Stack;
 
 /**
  * 39. 组合总和
+ * 同 Combine 77.组合
  * https://leetcode-cn.com/problems/combination-sum/
  * @author cck
  */
@@ -34,6 +35,7 @@ public class CombinationSum {
         }
         
         stack.push(nums[idx]);
+        // 数字可以无限次使用，因此这里 idx 不加1
         method(nums, idx, sum + nums[idx], stack, target);
         
         stack.pop();
