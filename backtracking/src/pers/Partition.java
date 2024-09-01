@@ -58,6 +58,7 @@ public class Partition {
         Partition obj = new Partition();
         System.out.println(obj.partition("aab"));
         System.out.println(obj.partition("aabaa"));
+        System.out.println(obj.partition("aabbb"));
     }
     
 }

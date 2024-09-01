@@ -16,7 +16,6 @@ public class NumTilePossibilities {
     public int numTilePossibilities(String tiles) {
     
         int[] counter = new int[26];
-        
         for (int i = 0; i < tiles.length(); i++) {
             counter[tiles.charAt(i) - 'A']++;
         }
@@ -27,7 +26,8 @@ public class NumTilePossibilities {
     private int backtrack(int[] counter) {
         
         int sum = 0;
-        
+
+        // 和全排列很相似，但是对结果的统计不同
         for (int i = 0; i < 26; i++) {
         
             if (counter[i] > 0) {

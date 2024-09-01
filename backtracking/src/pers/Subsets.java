@@ -2,9 +2,10 @@ package pers;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 /**
- * 78. Subsets 
+ * 78. 子集 Subsets
  * https://leetcode-cn.com/problems/subsets/
  * @author cck
  */
@@ -34,6 +35,31 @@ public class Subsets {
         now1.add(nums[i]);
         method(nums, i + 1, res, now1, true);
         method(nums, i + 1, res, now2, false);
+    }
+
+    /**
+     * 更优雅的解法
+     */
+    List<List<Integer>> res = new ArrayList<>();
+    public List<List<Integer>> subsets2(int[] nums) {
+        // 空集也是子集
+        res.add(new ArrayList<>());
+
+        backTrack(nums, 0, new Stack<Integer>());
+        return res;
+    }
+    public void backTrack(int[] nums, int idx, Stack<Integer> stack) {
+
+        if (idx >= nums.length) {
+            return;
+        }
+
+        stack.push(nums[idx]);
+        res.add(new ArrayList<>(stack));
+        backTrack(nums, idx + 1, stack);
+
+        stack.pop();
+        backTrack(nums, idx + 1, stack);
     }
     
     public static void main(String[] args) {
