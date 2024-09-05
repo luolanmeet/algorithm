@@ -91,3 +91,4 @@ DivisorGame | `LC简单题`[1025. 除数博弈](https://leetcode-cn.com/problems
 LastStoneWeightII | `LC中等题`[1049. 最后一块石头的重量 II](https://leetcode-cn.com/problems/last-stone-weight-ii/)
 LongestCommonSubsequence | `LC中等题`[1143. 最长公共子序列](https://leetcode-cn.com/problems/longest-common-subsequence/)
 MinInsertions | `LC困难题`[1312. 让字符串成为回文串的最少插入次数](https://leetcode-cn.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/)
+MaxStrength | `LC中等题`[2708. 一个小组的最大实力值](https://leetcode.cn/problems/maximum-strength-of-a-group/description/)
