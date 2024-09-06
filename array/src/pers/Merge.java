@@ -11,6 +11,39 @@ import java.util.List;
  */
 public class Merge {
 
+    public int[][] merge3(int[][] intervals) {
+
+        if (intervals.length == 1) {
+            return intervals;
+        }
+
+        Arrays.sort(intervals, (a, b) -> a[0] == b[0] ? a[1] - b[1] : a[0] - b[0]);
+
+        List<int[]> res = new ArrayList<>();
+        int[] pre = intervals[0];
+        res.add(pre);
+        for (int i = 0; i < intervals.length; i++) {
+
+            // 包含
+            if (pre[1] >= intervals[i][1]) {
+                continue;
+            }
+            // 可合并
+            if (pre[1] >= intervals[i][0]) {
+                pre[1] = intervals[i][1];
+                continue;
+            }
+            // 不重叠
+            if (pre[1] < intervals[i][0]) {
+                pre = intervals[i];
+                res.add(pre);
+                continue;
+            }
+        }
+
+        return res.toArray(new int[res.size()][]);
+    }
+
     public int[][] merge2(int[][] intervals) {
 
         if (intervals.length == 1) {
