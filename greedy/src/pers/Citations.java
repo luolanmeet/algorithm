@@ -22,7 +22,7 @@ public class Citations {
             }
         }
 
-        return citations[len - 1] > 0 ? 1 : 0;
+        return 0;
     }
 
 }
