@@ -4,8 +4,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * 每种字符至少取 K 个
- * https://leetcode.cn/problems/take-k-of-each-character-from-left-and-right/submissions/568611350/
+ * 2516. 每种字符至少取 K 个
+ * https://leetcode.cn/problems/take-k-of-each-character-from-left-and-right/description/
  * @auther ken.ck
  * @date 2024/9/27 19:59
  */
